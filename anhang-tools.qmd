@@ -1,0 +1,128 @@
+# Werkzeuge {#sec-tools}
+
+Eine Übersicht der Werkzeuge, die in diesem Buch vorkommen, geordnet nach den Schritten des UX-Prozesses. Preise und Gratisangebote ändern sich häufig. Prüft vor dem Einsatz, was gerade gilt (Stand: Herbst 2026).
+
+**Grundausstattung für den Workshop:** Papier, Stifte, Haftnotizen, Karteikarten, und **Figma** mit einem kostenlosen Education-Konto. Damit lassen sich alle Übungen durchführen.
+
+## Research
+
+| Werkzeug | Wofür | Kosten |
+| --- | --- | --- |
+| Papier, Aufnahme-App am Handy | Interviews führen und festhalten | – |
+| Microsoft Forms, Google Forms | Umfragen, SUS-Fragebogen | über Schulkonto bzw. gratis |
+| FigJam | Affinity Mapping, gemeinsames Whiteboard | im Figma-Education-Konto enthalten |
+| Miro | Whiteboard, viele Vorlagen | Gratisversion eingeschränkt; Education-Angebot |
+| Teams, Zoom | Remote-Interviews mit Aufzeichnung | über Schulkonto |
+
+## Personas und Journeys
+
+| Werkzeug | Wofür | Kosten |
+| --- | --- | --- |
+| FigJam-Vorlagen | Personas, Empathy Maps, Journey Maps | im Education-Konto enthalten |
+| Xtensio | Persona-Vorlagen | Gratisversion eingeschränkt |
+| Unsplash, Pexels | Porträtfotos für Personas | gratis |
+| Mermaid | Journey-Diagramme und Flussdiagramme als Text, z. B. in Markdown | gratis |
+
+## Story Map und Backlog
+
+| Werkzeug | Wofür | Kosten |
+| --- | --- | --- |
+| Haftnotizen an der Wand | Story Mapping im Team | – |
+| FigJam, Miro | Story Map digital, Vorlagen vorhanden | im Education-Konto bzw. Education-Angebot |
+| GitHub Projects | Product Backlog als Board, nah am Code | gratis |
+| Jira, Azure DevOps | Product Backlog und Sprints in größeren Teams | Gratisversion für kleine Teams |
+
+## Informationsarchitektur
+
+| Werkzeug | Wofür | Kosten |
+| --- | --- | --- |
+| Karteikarten | Card Sorting vor Ort | – |
+| OptimalSort, Treejack (Optimal Workshop) | Card Sorting und Tree Testing online mit Auswertung | Gratisversion stark eingeschränkt |
+| UXtweak | Card Sorting, Tree Testing, Usability-Tests | Gratisversion eingeschränkt |
+| FigJam, draw.io | Sitemaps und User Flows zeichnen | gratis |
+
+## Wireframes und Prototypen
+
+| Werkzeug | Wofür | Kosten |
+| --- | --- | --- |
+| Papier und Stift | Scribbles, Crazy 8s, Papierprototypen | – |
+| **Figma** | Wireframes, Mockups, klickbare Prototypen, Designsystem | Education-Konto gratis |
+| Excalidraw | schnelle Skizzen im Browser, handgezeichneter Stil | gratis |
+| Balsamiq | Wireframes im Scribble-Stil | kostenpflichtig, Testversion |
+| Penpot | Open-Source-Alternative zu Figma im Browser | gratis |
+
+## Visuelle Gestaltung
+
+| Werkzeug | Wofür |
+| --- | --- |
+| Adobe Color, Coolors, Colormind, Huemint, mycolor.space, Material Palette | Farbschemata erzeugen |
+| WebAIM Contrast Checker, Coolors Contrast Checker | Kontrast prüfen |
+| Google Fonts | kostenlose Webfonts |
+| Fontpair, Canva Font-Pairing-Leitfaden | Schriftkombinationen finden |
+| Type Scale (typescale.com) | Abstufung von Schriftgrößen berechnen |
+| Lucide, Material Symbols, Phosphor | Icon-Sammlungen |
+
+## Designsysteme
+
+| Quelle | Inhalt |
+| --- | --- |
+| Material Design 3 (m3.material.io) | Richtlinien und Figma-Kit von Google |
+| Human Interface Guidelines (developer.apple.com/design) | Richtlinien von Apple |
+| Fluent 2 (fluent2.microsoft.design) | Richtlinien von Microsoft |
+| GOV.UK Design System, IBM Carbon | öffentlich dokumentierte Designsysteme als Vorbild |
+| Bootstrap, Angular Material | Komponentenbibliotheken für die Umsetzung |
+
+## Barrierefreiheit
+
+| Werkzeug | Wofür | Kosten |
+| --- | --- | --- |
+| Lighthouse (Chrome DevTools) | automatischer Bericht | gratis |
+| axe DevTools | automatische WCAG-Prüfung im Browser | Grundversion gratis |
+| WAVE (wave.webaim.org) | Fehler direkt auf der Seite anzeigen | gratis |
+| NVDA, VoiceOver, TalkBack | Screenreader | gratis bzw. im System enthalten |
+| Stark, Contrast (Figma-Plugins) | Kontrast und Farbsehschwächen im Entwurf | Grundversion gratis |
+
+## Usability-Tests
+
+| Werkzeug | Wofür | Kosten |
+| --- | --- | --- |
+| Figma (Present-Modus) | Prototyp am Tablet oder Rechner testen | Education-Konto gratis |
+| Protokollvorlage auf Papier | Beobachtungen festhalten | – |
+| Maze | unmoderierte Tests mit Figma-Prototypen | Gratisversion eingeschränkt |
+| Microsoft Forms, Google Forms | SUS-Fragebogen | gratis |
+| OBS Studio | Bildschirm und Stimme aufnehmen | gratis |
+
+## KI-Assistenten
+
+**Allgemeine Assistenten**
+
+| Werkzeug | Wofür |
+| --- | --- |
+| Claude, ChatGPT, Microsoft Copilot | Leitfäden und Umfragen prüfen, Notizen ordnen, User Stories formulieren und prüfen |
+| Claude Code, Codex, Cursor | KI-Assistenten im Terminal und Editor: bauen Code-Prototypen, legen Backlog-Einträge in GitHub an |
+
+**Design-Skills für Programmierassistenten.** Sie geben einem Assistenten wie Claude Code, Codex CLI, Gemini CLI, Cursor oder GitHub Copilot Gestaltungsregeln und ein Vorgehen mit; gearbeitet wird direkt im Code. Viele dieser Skills laufen in mehreren dieser Werkzeuge.
+
+| Skill | Was ihn auszeichnet |
+| --- | --- |
+| Impeccable (impeccable.style) | ganzer Gestaltungsprozess: Produktkontext, Auswahl einer Gestaltungsrichtung, Kritik nach Heuristiken, Barrierefreiheits-Audit, Review, Designsystem |
+| Frontend Design (Anthropic) | offizieller Skill, verbreitetster Einstieg; vermeidet abgenutzte Schriften und Layout-Muster. Wird oft zusammen mit Impeccable verwendet. |
+| Taste Skill | mehrere Stil-Varianten mit Reglern; eine Variante findet und behebt Probleme bei Hierarchie, Kontrast und Abständen |
+| Hallmark | schlanker Skill mit wenigen Grundregeln gegen austauschbares KI-Design |
+| UI/UX Pro Max | Sammlung von Gestaltungsregeln und Mustern als Grundausstattung |
+
+**Eigenständige KI-Designwerkzeuge.** Sie erzeugen Entwürfe in einer eigenen Oberfläche statt in einem Code-Projekt.
+
+| Werkzeug | Gut für | Kosten |
+| --- | --- | --- |
+| Google Stitch (früher Galileo AI) | UI-Entwürfe aus Text oder Skizze, frühe Ideen | gratis |
+| Figma Make, KI-Funktionen in FigJam | KI direkt in Figma: Entwürfe und Prototypen erzeugen, Whiteboard-Inhalte zusammenfassen | kostenpflichtiger Plan; prüfen, ob im Education-Konto enthalten |
+| Uizard | schnelle Wireframes ohne Design-Ausbildung, auch aus Handskizzen | Gratisversion eingeschränkt |
+| v0 (Vercel) | fertige Bildschirme als lauffähiger React-Code | Gratisversion eingeschränkt |
+
+## Zum Weiterlesen
+
+- Don Norman: *The Design of Everyday Things.* Der Klassiker darüber, warum Türen falsch aufgehen und Herdplatten verwechselt werden.
+- Steve Krug: *Don't Make Me Think.* Kurz, witzig, sehr praktisch, mit einem Kapitel über Usability-Tests für kleines Budget.
+- Nielsen Norman Group (nngroup.com): Artikel zu fast jeder Frage aus diesem Buch, frei zugänglich.
+- Laws of UX (lawsofux.com): die psychologischen Gesetze aus dem Kapitel *Visuelle Gestaltung*, anschaulich erklärt.

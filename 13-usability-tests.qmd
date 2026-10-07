@@ -1,0 +1,231 @@
+# Usability-Tests und Heuristiken {#sec-usability}
+
+Alles, was wir bisher gemacht haben, beruht auf Forschung, aber auch auf unseren eigenen Entscheidungen. Ob diese Entscheidungen richtig waren, zeigt sich erst, wenn echte Menschen das Ergebnis benutzen. Dieses Kapitel schließt den Kreislauf: prüfen, lernen, verbessern.
+
+Es gibt zwei grundsätzliche Wege, eine Oberfläche zu prüfen:
+
+- **mit Nutzenden:** Usability-Tests, A/B-Tests. Zeigen, was wirklich passiert.
+- **mit Fachleuten:** heuristische Evaluation, Prüfung gegen Normen. Schnell und billig, ersetzt aber keinen Test mit Nutzenden.
+
+## Usability-Tests
+
+::: {.merke}
+Bei einem **Usability-Test** lösen Personen aus der Zielgruppe typische Aufgaben mit einem Produkt oder Prototyp, während sie beobachtet werden. Ziel ist es, Probleme in der Benutzung zu finden: Wo zögern sie, wo machen sie Fehler, wo geben sie auf?
+:::
+
+### Varianten
+
+| | |
+| --- | --- |
+| **moderiert** | Eine Person leitet den Test, stellt Aufgaben und kann nachfragen. |
+| **unmoderiert** | Teilnehmende bearbeiten die Aufgaben allein, meist online; ein Werkzeug zeichnet Bildschirm und Stimme auf. |
+| **vor Ort** | im selben Raum, gut für Prototypen auf echten Geräten, etwa einem Tablet im Restaurant |
+| **remote** | per Videokonferenz oder Online-Werkzeug; spart Wege, erreicht mehr Menschen |
+
+### Lautes Denken
+
+Die wichtigste Technik ist das **laute Denken** (*Thinking Aloud*): Teilnehmende sprechen während der Aufgabe aus, was sie sehen, denken und vorhaben. „Ich suche jetzt die Getränke … hier steht *Beilagen*, das ist es wohl nicht … ah, unten.“ So erfährt man nicht nur, **dass** jemand stockt, sondern **warum**.
+
+### Wie viele Personen?
+
+Jakob Nielsen hat gezeigt, dass **fünf Personen** pro Testrunde etwa 85 % der Usability-Probleme finden. Jede weitere Person bringt immer weniger Neues. Daraus folgt nicht, dass fünf Personen genügen, sondern dass es besser ist, **mehrmals mit wenigen** zu testen: fünf Personen testen, Probleme beheben, wieder fünf testen.
+
+### Der Testplan
+
+Ein Testplan legt vor dem Test fest:
+
+1. **Ziele:** Was wollen wir herausfinden? Beispiel: „Finden Gäste heraus, ob ihr Essen bereits zubereitet wird?“
+2. **Teilnehmende:** wer, wie viele, wie gefunden. Passend zu den Personas.
+3. **Aufgaben:** realistische Szenarien (siehe unten).
+4. **Messgrößen:** was gezählt und gemessen wird.
+5. **Ablauf und Rollen:** Begrüßung, Einverständnis, Aufgaben, Abschlussfragen; wer moderiert, wer protokolliert.
+6. **Material:** Prototyp, Gerät, Aufnahme, Protokollvorlage.
+
+### Gute Aufgaben schreiben
+
+Aufgaben sind **Szenarien**, keine Anleitungen. Sie beschreiben ein Ziel aus Sicht der Persona, ohne die Begriffe der Oberfläche zu verraten.
+
+| Schlecht | Gut |
+| --- | --- |
+| Klicke auf *Getränke* und füge ein Cola zum Warenkorb hinzu. | Du hast Durst. Bestell dir etwas zu trinken. |
+| Öffne *Bestellungen am Tisch* und prüfe den Status. | Deine Freundin fragt, wann die Pizza kommt. Finde es heraus. |
+| Storniere Bestellung 44. | Du merkst, dass du aus Versehen zwei Suppen bestellt hast. Du willst nur eine. |
+
+### Moderieren
+
+- Erklären, dass **das Produkt** getestet wird, nicht die Person. „Sie können nichts falsch machen.“
+- Nicht helfen, nicht erklären, nicht verteidigen. Auf Fragen mit Gegenfragen antworten: „Was würden Sie denn erwarten?“
+- Schweigen aushalten. Wenn jemand verstummt: „Was geht Ihnen gerade durch den Kopf?“
+- Die Aufgabe abbrechen, wenn jemand nicht weiterkommt, und das als nicht gelöst notieren.
+
+### Messgrößen
+
+| Messgröße | Beschreibung | Usability-Kriterium |
+| --- | --- | --- |
+| **Erfolgsquote** | Anteil der gelösten Aufgaben | Effektivität |
+| **Zeit pro Aufgabe** | wie lange es bis zur Lösung dauert | Effizienz |
+| **Fehler** | falsche Klicks, Umwege, Abbrüche | Effektivität, Effizienz |
+| **Zufriedenheit** | Fragebogen nach Aufgabe oder Test | Zufriedenstellung |
+
+Für die Zufriedenheit gibt es standardisierte Fragebögen. Der bekannteste ist die **System Usability Scale (SUS)**: zehn Aussagen wie „Ich fand das System unnötig komplex“, jeweils auf einer Skala von 1 (stimme gar nicht zu) bis 5 (stimme voll zu). Daraus wird ein Wert von 0 bis 100 berechnet. Der Durchschnitt vieler Studien liegt bei etwa **68**; darüber ist überdurchschnittlich.
+
+### Ergebnisse auswerten
+
+Jedes Problem wird mit Häufigkeit und Schweregrad festgehalten. Eine verbreitete Skala für den **Schweregrad** stammt von Nielsen:
+
+| Stufe | Bedeutung |
+| --- | --- |
+| 0 | kein Usability-Problem |
+| 1 | kosmetisch: nur beheben, wenn Zeit bleibt |
+| 2 | gering: niedrige Priorität |
+| 3 | schwer: wichtig, hohe Priorität |
+| 4 | katastrophal: muss vor der Veröffentlichung behoben werden |
+
+### A/B-Tests
+
+Bei einem **A/B-Test** sieht ein Teil der echten Nutzenden Variante A, der andere Variante B, und man misst, welche besser abschneidet, zum Beispiel mehr abgeschlossene Bestellungen. A/B-Tests brauchen ein fertiges Produkt und viele Nutzende. Sie zeigen, **welche** Variante besser ist, aber nicht, **warum**.
+
+## Heuristische Evaluation
+
+::: {.merke}
+Bei einer **heuristischen Evaluation** prüfen mehrere Fachleute unabhängig voneinander eine Oberfläche anhand anerkannter Grundsätze (*Heuristiken*) und sammeln Verstöße. Sie ist schnell und billig, findet aber andere Probleme als ein Test mit Nutzenden und ersetzt ihn nicht.
+:::
+
+Am bekanntesten sind die **10 Usability-Heuristiken** von Jakob Nielsen (1994):
+
+| Nr. | Heuristik | Bedeutung |
+| --- | --- | --- |
+| 1 | **Sichtbarkeit des Systemstatus** | Das System informiert immer darüber, was gerade passiert, mit angemessener Rückmeldung in angemessener Zeit. |
+| 2 | **Übereinstimmung mit der realen Welt** | Die Sprache der Nutzenden statt Fachbegriffe; Abläufe in einer natürlichen Reihenfolge. |
+| 3 | **Benutzerkontrolle und Freiheit** | Ein deutlicher „Notausgang“: rückgängig machen, abbrechen, zurück. |
+| 4 | **Konsistenz und Standards** | Gleiche Dinge heißen gleich und sehen gleich aus; Plattformkonventionen werden eingehalten. |
+| 5 | **Fehlervermeidung** | Noch besser als gute Fehlermeldungen: Fehler gar nicht erst zulassen. |
+| 6 | **Wiedererkennen statt Erinnern** | Optionen sichtbar machen, statt Nutzende sich etwas merken zu lassen. |
+| 7 | **Flexibilität und Effizienz** | Abkürzungen für Geübte, ohne Anfänger zu überfordern. |
+| 8 | **Ästhetisches und minimalistisches Design** | Keine überflüssigen Informationen, die vom Wichtigen ablenken. |
+| 9 | **Hilfe beim Erkennen und Beheben von Fehlern** | Fehlermeldungen in klarer Sprache, die das Problem benennen und eine Lösung vorschlagen. |
+| 10 | **Hilfe und Dokumentation** | Wenn Hilfe nötig ist, ist sie leicht zu finden und auf die Aufgabe bezogen. |
+
+### Grundsätze der Dialoggestaltung nach ISO 9241-110
+
+Für die *Software-Ergonomie* gibt es eine Norm mit ähnlichem Ziel. ISO 9241-110 (Fassung 2020) nennt sieben **Interaktionsprinzipien**:
+
+| Prinzip | Kurz erklärt |
+| --- | --- |
+| **Aufgabenangemessenheit** | Das System unterstützt die Aufgabe, ohne unnötige Schritte. |
+| **Selbstbeschreibungsfähigkeit** | Nutzende erkennen jederzeit, wo sie sind und was sie tun können. |
+| **Erwartungskonformität** | Das System verhält sich so, wie Nutzende es aus Erfahrung erwarten. |
+| **Erlernbarkeit** | Das System ist leicht zu erlernen und unterstützt beim Lernen. |
+| **Steuerbarkeit** | Nutzende bestimmen Ablauf, Richtung und Tempo selbst. |
+| **Robustheit gegen Benutzungsfehler** | Fehler werden vermieden, oder ihre Folgen lassen sich mit wenig Aufwand beheben. |
+| **Benutzerbindung** | Das System ist so gestaltet, dass Nutzende es gern und weiter verwenden. |
+
+## Am Bestellsystem: Evaluation und Test {#sec-usability-demo}
+
+::: {.demo}
+**Heuristische Evaluation des Figma-Prototyps.** Bevor Nutzende den Prototyp aus dem Kapitel [Wireframes und Prototypen](09-wireframes-prototypen.qmd) testen, prüfen drei Personen aus einer anderen Gruppe ihn unabhängig voneinander anhand der zehn Heuristiken [Beispiel]{.fiktiv}:
+
+| Heuristik | Befund | Grad |
+| --- | --- | --- |
+| 1 Systemstatus | Nach „Hinzufügen“ ändert sich nur die Zahl im Warenkorb unten; ob etwas passiert ist, sieht man kaum. | 2 |
+| 2 Reale Welt | Die Küchenansicht nennt Bestellungen „Tickets“; in der Küche sagt man „Bon“ oder „Bestellung“. | 1 |
+| 3 Kontrolle | Nach dem Absenden gibt es keinen Hinweis, wie man eine falsche Bestellung rückgängig macht. | 3 |
+| 4 Konsistenz | „Hinzufügen“ ist ein Button, „Bestellung abschicken“ ein Link im Warenkorb. | 2 |
+| 5 Fehlervermeidung | Ein ausverkauftes Gericht kann noch im Warenkorb liegen; der Gast erfährt es erst beim Absenden. | 3 |
+| 6 Wiedererkennen | Auf *Bestellungen am Tisch* steht nicht, welche Gerichte zu welcher Bestellung gehören. | 2 |
+| 7 Effizienz | Ein zweites Getränk nachzubestellen heißt, die Kategorie *Getränke* erneut zu suchen. | 2 |
+| 8 Minimalismus | Die Gericht-Karte zeigt Name, Preis, Beschreibung, Allergene und Bild; die Liste wird unübersichtlich. | 1 |
+| 9 Fehler beheben | Der Hinweis „Fehler beim Absenden“ sagt nicht, welches Gericht das Problem ist. | 3 |
+| 10 Hilfe | Es gibt keine Möglichkeit, Personal zu rufen oder eine Frage zu einem Gericht zu stellen. | 2 |
+
+Die Befunde mit Grad 3 werden behoben, bevor der Prototyp mit Nutzenden getestet wird; die übrigen kommen als UX-Schulden ins Product Backlog.
+:::
+
+::: {.demo}
+**Testplan für den Figma-Prototyp**
+
+- **Ziel:** Prüfen, ob Gäste ohne Hilfe bestellen, den Status finden und eine Bestellung stornieren können.
+- **Teilnehmende:** fünf Personen; zwei passend zu Persona Lena (unter 25), zwei passend zu Herbert (über 60), eine dazwischen.
+- **Ort und Gerät:** an einem Tisch, Prototyp auf einem Tablet, Bildschirm und Stimme werden aufgezeichnet.
+- **Rollen:** eine Person moderiert, eine protokolliert.
+
+| Nr. | Aufgabe | Erfolg, wenn |
+| --- | --- | --- |
+| 1 | Du hast Hunger auf etwas Vegetarisches. Bestell dir eine Hauptspeise und etwas zu trinken. | Bestellung mit einer vegetarischen Hauptspeise und einem Getränk abgeschickt |
+| 2 | Deine Freundin fragt, ob euer Essen schon gekocht wird. Finde es heraus. | Status auf *Bestellungen am Tisch* gefunden |
+| 3 | Du hast aus Versehen zwei Suppen bestellt. Du willst nur eine. | Bestellung storniert und neu bestellt, oder Rückfrage beim Personal als gewählter Weg |
+| 4 | Du willst noch ein Cola. | Getränk nachbestellt |
+
+**Ergebnisse** [Beispiel]{.fiktiv}
+
+| Aufgabe | Erfolg | Beobachtung | Grad |
+| --- | --- | --- | --- |
+| 1 | 5 / 5 | Zwei Personen suchten die Kennzeichnung *vegetarisch* zuerst als Filter. | 1 |
+| 2 | 4 / 5 | Eine Person über 60 tippte auf *Warenkorb* statt *Am Tisch*. | 2 |
+| 3 | 2 / 5 | Drei Personen erwarteten, eine einzelne Position zu entfernen; die Geschäftsregeln erlauben nur, die ganze Bestellung zu stornieren (BR-007). | 3 |
+| 4 | 5 / 5 | – | 0 |
+
+SUS-Wert im Mittel: 74 [Beispiel]{.fiktiv}.
+
+**Zurück ins Product Backlog.** Der Test führt zu einem Vorschlag, der die Geschäftsregeln betrifft und deshalb mit dem Restaurant besprochen werden muss: Solange eine Bestellung *Offen* ist, dürfen einzelne Positionen entfernt werden (Änderung von BR-007). Für die Gestaltung allein gilt: Beim Stornieren wird klar gesagt, dass die ganze Bestellung storniert wird, und angeboten, die übrigen Gerichte sofort neu zu bestellen.
+
+Damit beginnt der Kreislauf von vorn (siehe [UX im Scrum-Prozess](02-ux-scrum.qmd)): Die geänderte Story kommt ins Product Backlog, wird im nächsten Sprint umgesetzt, und die nächsten fünf Personen testen das Inkrement.
+:::
+
+## Übung {.unnumbered}
+
+::: {.uebung}
+**Euren Prototyp testen**
+
+**Ziel:** Mit echten Nutzenden die größten Probleme eures Prototyps finden.
+
+**Ablauf (Gruppen zu dritt, zwei Unterrichtseinheiten):**
+
+1. **Heuristische Evaluation:** Jede Person prüft den Prototyp einer **anderen** Gruppe allein anhand der 10 Heuristiken und notiert Befunde mit Schweregrad. Danach führt ihr die Befunde zusammen.
+2. **Testplan:** Schreibt für euren eigenen Prototyp einen Testplan mit Ziel, Teilnehmenden und drei bis vier Aufgaben als Szenarien.
+3. **Test:** Testet mit mindestens drei Personen außerhalb der Klasse. Eine Person moderiert mit lautem Denken, eine protokolliert, eine bedient bei Bedarf den Papierprototyp oder die Aufnahme.
+4. **Auswertung:** Tragt Erfolgsquote, Beobachtungen und Schweregrad in eine Tabelle ein. Lasst nach dem Test den SUS-Fragebogen ausfüllen.
+5. **Iteration:** Behebt die zwei schwersten Probleme im Prototyp. Formuliert eine Änderung an einer eurer User Stories oder Geschäftsregeln aus dem Kapitel *Vom UX-Design zum Product Backlog*.
+
+**Werkzeug:** Figma-Prototyp (Present-Modus), Protokollvorlage auf Papier, Microsoft Forms oder Google Forms für den SUS-Fragebogen. Für unmoderierte Online-Tests: Maze (Gratisversion eingeschränkt).
+
+**Ergebnis:** Befundliste der heuristischen Evaluation, Testplan, Ergebnistabelle mit SUS-Wert, überarbeiteter Prototyp, ein neuer oder geänderter Eintrag für euer Product Backlog.
+:::
+
+## Selbstcheck {.unnumbered .selbstcheck}
+
+<details><summary>Was ist lautes Denken, und warum ist es nützlich?</summary>
+
+Teilnehmende sprechen während des Tests aus, was sie sehen, denken und vorhaben. So erfährt man nicht nur, dass jemand Probleme hat, sondern warum.
+
+</details>
+
+<details><summary>Warum testet man lieber mehrmals mit fünf Personen als einmal mit zwanzig?</summary>
+
+Fünf Personen finden bereits etwa 85 % der Probleme; jede weitere bringt wenig Neues. Mehr lernt man, wenn man die gefundenen Probleme behebt und die verbesserte Version wieder testet.
+
+</details>
+
+<details><summary>Warum sollen Testaufgaben keine Begriffe aus der Oberfläche enthalten?</summary>
+
+Weil die Aufgabe sonst verrät, wo man klicken muss. Getestet würde dann nur, ob jemand ein Wort wiederfindet, nicht ob die Oberfläche verständlich ist.
+
+</details>
+
+<details><summary>Nenne fünf der zehn Heuristiken von Nielsen.</summary>
+
+Sichtbarkeit des Systemstatus; Übereinstimmung mit der realen Welt; Benutzerkontrolle und Freiheit; Konsistenz und Standards; Fehlervermeidung; Wiedererkennen statt Erinnern; Flexibilität und Effizienz; ästhetisches und minimalistisches Design; Hilfe beim Erkennen und Beheben von Fehlern; Hilfe und Dokumentation.
+
+</details>
+
+<details><summary>Nenne die sieben Interaktionsprinzipien nach ISO 9241-110.</summary>
+
+Aufgabenangemessenheit, Selbstbeschreibungsfähigkeit, Erwartungskonformität, Erlernbarkeit, Steuerbarkeit, Robustheit gegen Benutzungsfehler, Benutzerbindung.
+
+</details>
+
+<details><summary>Was ist der Unterschied zwischen einem Usability-Test und einer heuristischen Evaluation?</summary>
+
+Beim Usability-Test lösen echte Nutzende Aufgaben, und man beobachtet, was tatsächlich passiert. Bei der heuristischen Evaluation prüfen Fachleute die Oberfläche anhand von Grundsätzen, ohne Nutzende. Sie ist schneller und billiger, findet aber andere Probleme und ersetzt den Test nicht.
+
+</details>

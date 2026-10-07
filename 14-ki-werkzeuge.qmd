@@ -1,0 +1,97 @@
+# UX-Arbeit mit KI-Werkzeugen {#sec-ki}
+
+KI-Assistenten wie Claude oder ChatGPT schreiben Interviewleitfäden, fassen Notizen zusammen, formulieren User Stories und bauen in wenigen Minuten einen klickbaren Prototyp. Das verändert, wie UX-Arbeit aussieht. Es ändert aber nichts an ihrem Kern: Erkenntnisse über Menschen bekommt man nur von Menschen. Dieses Kapitel zeigt, wo KI im Prozess dieses Buches hilft, wo sie schadet und wie man sie so einsetzt, dass am Ende bessere Produkte entstehen und nicht nur schneller mittelmäßige.
+
+## Begriffe
+
+::: {.merke}
+Ein **Large Language Model (LLM)** ist ein KI-Modell, das aus sehr großen Textmengen gelernt hat, wahrscheinliche Fortsetzungen von Text zu erzeugen. Es kann formulieren, zusammenfassen, strukturieren und Code schreiben. Es **weiß** nichts über eure Nutzenden, außer dem, was ihr ihm gebt.
+:::
+
+::: {.merke}
+Eine **Halluzination** ist eine Aussage eines LLM, die plausibel klingt, aber erfunden ist, zum Beispiel ein Zitat, das in keinem Interview vorkam, oder eine Studie, die es nicht gibt.
+:::
+
+::: {.merke}
+**Human in the Loop** bedeutet: Ein Mensch prüft und entscheidet an jeder wichtigen Stelle. Die KI liefert Entwürfe und Vorschläge; Interviews, Tests und Entscheidungen bleiben bei Menschen.
+:::
+
+## Wo KI im UX-Prozess hilft
+
+Die Faustregel: KI ist stark beim **Vorbereiten**, **Ordnen** und **Prüfen** von Material. Sie ist schwach beim **Herausfinden**, was Menschen wirklich brauchen.
+
+| Phase | KI hilft bei | Ein Mensch muss |
+| --- | --- | --- |
+| **Research vorbereiten** | Interviewleitfaden entwerfen; Suggestiv- und Doppelfragen finden; Umfragen prüfen; Einverständniserklärung formulieren | die Interviews führen und beobachten |
+| **Research auswerten** | Notizen zu Gruppen ordnen (Affinity Mapping); Insights formulieren; zu jeder Aussage die Quelle angeben | Daten vorher anonymisieren; prüfen, ob jede Gruppe wirklich durch Notizen belegt ist |
+| **Personas, Journeys** | Entwürfe aus echten Notizen; Prüfung auf Klischees und unbelegte Behauptungen | entscheiden, was stimmt |
+| **Story Map, Backlog** | Rückgrat aus der Journey ableiten; Stories formulieren; INVEST prüfen; Akzeptanzkriterien und Sonderfälle ergänzen; Stories schneiden; Widersprüche finden | der Product Owner ordnet das Backlog |
+| **Gestalten** | Wireframes und klickbare Code-Prototypen in kurzer Zeit; Varianten zum Vergleichen; Texte und Fehlermeldungen | auswählen, was getestet wird |
+| **Prüfen** | heuristische Evaluation; Barrierefreiheits-Check; Testaufgaben formulieren; Testnotizen auswerten | den Usability-Test mit echten Personen durchführen |
+
+## Grenzen und Risiken
+
+### Synthetische Nutzende sind keine Forschung
+
+Man kann ein LLM bitten: „Stell dir vor, du bist ein 71-jähriger Pensionist, wie findest du unsere App?“ Die Antwort klingt überzeugend. Sie beruht aber auf dem Durchschnitt dessen, was im Internet über Pensionisten geschrieben wird, nicht auf Herbert, der seine Lesebrille im Auto vergessen hat.
+
+::: {.merke}
+**Synthetische Nutzende** (*Synthetic Users*) sind von einer KI simulierte Personen, die Fragen beantworten oder Entwürfe bewerten. Ihre Antworten sind **Hypothesen**, keine Erkenntnisse. Sie dürfen höchstens helfen, Forschungsfragen zu finden, und gehören als Discovery-Eintrag ins Backlog, nie als Begründung in eine User Story.
+:::
+
+### Weitere Risiken
+
+- **Halluzinationen:** Die KI erfindet Zitate, Zahlen oder Quellen. Gegenmittel: zu jeder Aussage die Quelle verlangen und stichprobenartig nachprüfen.
+- **Klischees:** LLMs geben wieder, was häufig geschrieben wurde. Eine KI-Persona „Seniorin“ ist oft technikfeindlich und hilflos, auch wenn die echten Interviews etwas anderes zeigen.
+- **Durchschnitt statt Idee:** KI-generierte Oberflächen sehen sich ähnlich, weil sie sich am Häufigsten orientieren. Für Usability ist Vertrautes oft gut (Jakobs Gesetz); ein unverwechselbares Produkt entsteht so aber nicht.
+- **Scheinsicherheit:** Eine perfekt formatierte Befundliste wirkt vollständig. Eine KI sieht nicht, dass der Koch nasse Hände hat.
+- **Datenschutz:** Interviewnotizen enthalten oft persönliche Daten. Nach der DSGVO dürfen sie nur mit Einverständnis und möglichst **anonymisiert** an einen KI-Dienst gehen.
+
+## Gut mit KI arbeiten
+
+### Kontext geben
+
+Ein LLM liefert umso bessere Ergebnisse, je mehr es über das Projekt weiß. Statt „Schreib mir User Stories für eine Restaurant-App“:
+
+```text
+Hier sind unsere Personas (Lena, Herbert, Marko) und die Journey Map von Lena
+als Tabelle. Leite daraus ein Rückgrat für eine Story Map ab und schlage
+für jede Phase zwei User Stories vor. Gib bei jeder Story an, auf welchen
+Pain Point der Journey sie sich bezieht. Erfinde keine Bedürfnisse, die
+nicht in den Unterlagen stehen; schreib solche Ideen getrennt als "Annahme".
+```
+
+### Prüfen lassen statt nur erzeugen lassen
+
+KI ist oft nützlicher als Kritikerin denn als Autorin:
+
+- „Prüfe diese fünf Interviewfragen auf Suggestivfragen und Doppelfragen.“
+- „Prüfe diese User Story mit INVEST und nenne fehlende Akzeptanzkriterien.“
+- „Welche Sonderfälle fehlen in diesem User Flow?“
+
+### Quellen verlangen
+
+Bei Auswertungen immer die Rückverfolgbarkeit einfordern: „Gib zu jedem Insight die Nummern der Notizen an, auf die er sich stützt.“ Ein Insight ohne Notiz ist gestrichen.
+
+### Kennzeichnen
+
+Was von einer KI stammt, wird gekennzeichnet, genauso wie in diesem Buch erfundene Beispieldaten mit [Beispiel]{.fiktiv} markiert sind.
+
+## Werkzeuge für Gestaltung mit KI
+
+Allgemeine Assistenten wie Claude können Oberflächen bauen, liefern ohne Anleitung aber oft austauschbare Standardlayouts. Spezialisierte Erweiterungen geben dem Assistenten ein **Gestaltungsverfahren** mit festen Prüfschritten. Ein Beispiel ist **Impeccable** (impeccable.style), ein frei verfügbarer Skill für Programmierassistenten wie Claude Code, Codex CLI, Gemini CLI, Cursor oder GitHub Copilot in VS Code. Die Befehle sind überall gleich; hier sind sie in der Schreibweise von Claude Code angegeben. Seine Befehle passen auf die Schritte dieses Buches:
+
+| Schritt im Buch | Befehl | Was passiert |
+| --- | --- | --- |
+| Produktkontext nach Sprint 0 | `/impeccable init` | hält Nutzende, Ziele und Rahmenbedingungen in einer Datei `PRODUCT.md` fest, die bei jedem späteren Schritt gelesen wird |
+| Refinement einer Story | `/impeccable shape` | erstellt einen UX-Entwurf für eine Story, bevor Code entsteht |
+| Prototyp | eine neue Oberfläche bauen lassen; `/impeccable live` | klickbarer Code-Prototyp; Varianten eines Elements direkt im Browser vergleichen |
+| Heuristische Evaluation | `/impeccable critique` | Bewertung nach Heuristiken mit Punkten und Befundliste |
+| Barrierefreiheit, Definition of Done | `/impeccable audit` | prüft Kontrast, Zielgrößen, Zustände und responsives Verhalten |
+| UX-Texte | `/impeccable clarify` | verbessert Beschriftungen und Fehlermeldungen |
+| Fehler-, Leer- und Ladezustände | `/impeccable harden` | ergänzt die Sonderfälle aus den Akzeptanzkriterien |
+| Designsystem | `/impeccable document`, `/impeccable extract` | beschreibt das Designsystem in `DESIGN.md` und zieht Design Tokens und Komponenten heraus |
+
+Im Dual-Track-Modell (siehe [UX im Scrum-Prozess](02-ux-scrum.qmd)) beschleunigt ein solches Werkzeug vor allem die **Discovery**: Getestete Entwürfe liegen früher vor. In der **Delivery** wirkt die automatische Prüfung wie ein Teil der Definition of Done. Der Test mit echten Personen bleibt trotzdem nötig: `critique` ersetzt die Prüfung durch Fachleute, nicht durch Nutzende.
+
+Ein Vergleich zeigt, warum beides zusammengehört: Eine KI findet technisch prüfbare Probleme wie zu geringen Kontrast oder fehlende Beschriftungen zuverlässig. Ein Team, das Journey und Beobachtung kennt, findet die Probleme aus dem Nutzungskontext, etwa einen Küchenbildschirm, der aus drei Metern nicht lesbar ist, oder ein weitergereichtes Tablet, auf dem noch der Warenkorb der Vorperson steht. Zusammen ist die Befundliste besser als jede allein.

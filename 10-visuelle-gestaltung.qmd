@@ -1,0 +1,220 @@
+# Visuelle Gestaltung {#sec-gestaltung}
+
+Wenn Struktur und Ablauf stehen, bekommt die Oberfläche ihr Aussehen. Visuelle Gestaltung ist dabei keine Frage des Geschmacks. Sie beruht auf Erkenntnissen darüber, wie Menschen sehen, lesen und Entscheidungen treffen. Wer diese Regeln kennt, kann begründen, warum ein Button hier stehen muss und nicht dort.
+
+## Visuelle Hierarchie
+
+::: {.merke}
+**Visuelle Hierarchie** ist die Anordnung und Gewichtung von Elementen, die bestimmt, in welcher Reihenfolge sie wahrgenommen werden. Das Wichtigste fällt zuerst auf, das Unwichtigste zuletzt.
+:::
+
+Mittel, um Hierarchie herzustellen:
+
+- **Größe:** Größeres wird zuerst gesehen.
+- **Gewicht und Kontrast:** Fettes, Dunkles, Farbiges hebt sich ab.
+- **Position:** Oben und links wird (in unserer Leserichtung) zuerst gesehen.
+- **Weißraum:** Ein Element mit viel freiem Raum herum wirkt wichtiger.
+- **Farbe:** Eine einzige Akzentfarbe zieht den Blick an, zehn Akzentfarben heben sich gegenseitig auf.
+
+Ein einfacher Test ist der **Squint-Test**: Man kneift die Augen zusammen, bis die Oberfläche verschwimmt. Was dann noch zu erkennen ist, steht oben in der Hierarchie. Ist es das Richtige?
+
+## Das Gedächtnis entlasten
+
+Das Kurzzeitgedächtnis ist begrenzt. Nutzende sollten sich so wenig wie möglich merken müssen, zum Beispiel keine Information von einem Schritt in den nächsten tragen.
+
+### Millersches Gesetz
+
+Der Psychologe George A. Miller beschrieb 1956, dass das Kurzzeitgedächtnis etwa **7 ± 2** Elemente gleichzeitig halten kann, also 5 bis 9. Neuere Forschung (Nelson Cowan, 2001) geht sogar nur von etwa **4** Einheiten aus.
+
+Als Faustregel heißt das: Inhalte in überschaubare Gruppen gliedern (*Chunking*). Eine Telefonnummer liest man als 0732 / 123 45 67, nicht als 07321234567. Wichtig: Die Regel gilt für Dinge, die man sich **merken** muss, nicht für alles, was man **sieht**. Ein Menü mit zwölf Einträgen ist kein Verstoß, solange man sie nicht auswendig wissen muss.
+
+### Hicksches Gesetz
+
+Je mehr Wahlmöglichkeiten man Menschen anbietet, desto länger dauert die Entscheidung (William Edmund Hick und Ray Hyman, 1952). Die Zeit steigt dabei nicht gleichmäßig, sondern logarithmisch mit der Zahl der Möglichkeiten.
+
+Auch wenn Menschen sich viele Optionen wünschen, sollte man nur so viele anbieten, wie sinnvoll sind, oder die Auswahl in Schritte teilen: zuerst die Kategorie, dann das Gericht.
+
+### Auswahlparadoxon
+
+> Auswahl ist gut, aber zu viel ist schlecht.
+
+In einem bekannten Experiment (Sheena Iyengar und Mark Lepper, 2000) bot ein Supermarkt an einem Probierstand entweder 24 oder 6 Marmeladensorten an. Beim großen Angebot blieben mehr Menschen stehen, beim kleinen kauften aber deutlich mehr. Einerseits wollen wir große Auswahl, andererseits entscheiden wir uns eher, wenn die Auswahl kleiner ist oder wenn klar ist, wie wir zur besten Wahl kommen. Dasselbe gilt für Entscheidungen auf Websites: Neun Preismodelle sind zu viel; drei mit einer Empfehlung sind besser.
+
+### Fittssches Gesetz
+
+Die Zeit, um ein Ziel mit Finger oder Maus zu treffen, hängt von seiner **Größe** und seiner **Entfernung** ab (Paul Fitts, 1954). Große, nahe Ziele trifft man schnell, kleine, ferne langsam und ungenau. Daraus folgt: Wichtige Buttons groß machen und dorthin setzen, wo Finger oder Maus ohnehin sind. Auf Touchscreens sollten Ziele mindestens etwa 44 × 44 Pixel groß sein.
+
+### Jakobs Gesetz
+
+Nutzende verbringen die meiste Zeit auf **anderen** Websites und Apps. Sie erwarten deshalb, dass eine neue Oberfläche so funktioniert wie die, die sie schon kennen (Jakob Nielsen). Der Warenkorb sitzt rechts oben oder unten, das Logo führt zur Startseite. Wer davon abweicht, braucht einen sehr guten Grund.
+
+## Gestaltgesetze
+
+Die Gestaltgesetze stammen aus der Gestaltpsychologie des frühen 20. Jahrhunderts. Sie beschreiben, wie unser Gehirn aus einer Vielzahl von Reizen einzelne Objekte und Gruppen erkennt. In der Psychologie spielen sie heute keine große Rolle mehr; für die visuelle Gestaltung sind sie aber sehr hilfreich.
+
+::: {.gestalt}
+::: {.gesetz}
+**Nähe**
+
+Dinge, die nah beieinanderstehen, empfinden wir als zusammengehörig. Ein Label gehört zu dem Eingabefeld, dem es am nächsten ist, und nicht zu dem darüber.
+:::
+::: {.gesetz}
+**Ähnlichkeit**
+
+Elementen mit gleicher Form oder Farbe schreiben wir gleiche Eigenschaften zu. In einer App erwarten wir zum Beispiel, dass gleich aussehende Buttons das Gleiche tun. Farbe und Form können die Wirkung der Nähe übertrumpfen.
+:::
+::: {.gesetz}
+**Geschlossenheit**
+
+Unser Gehirn ergänzt Formen, wo eigentlich keine sind. Ein unterbrochener Kreis wird als Kreis gesehen. Dank dieser Mustererkennung erfassen wir Umgebungen und Webseiten in Sekundenbruchteilen.
+:::
+::: {.gesetz}
+**Figur und Grund**
+
+Wir trennen automatisch, was im Vordergrund steht (Figur) und was dahinter liegt (Grund). Ist das nicht eindeutig, kippt die Wahrnehmung. Ein Dialog über einem abgedunkelten Hintergrund nutzt dieses Gesetz.
+:::
+::: {.gesetz}
+**Gemeinsame Region**
+
+Dinge innerhalb einer gemeinsamen Umrandung oder Fläche gehören zusammen. Das Kacheldesign (*Bento Grid*) folgt diesem Prinzip: Jeder Informationsblock bekommt seine eigene Kachel.
+:::
+::: {.gesetz}
+**Kontinuität**
+
+Elemente, die auf einer Linie oder Kurve liegen, werden als zusammengehörig gesehen. Ein Fortschrittsbalken mit Schritten oder ein horizontal scrollbares Karussell nutzt dieses Gesetz.
+:::
+:::
+
+## Blickverläufe
+
+Wie wandert der Blick über eine Seite? Dafür gibt es drei bekannte Modelle.
+
+**Gutenberg-Diagramm und Z-Muster:** Menschen, die von links nach rechts lesen, beginnen oben links, dem Punkt der größten Aufmerksamkeit. Von dort gleitet der Blick nach rechts unten, beim Gutenberg-Diagramm diagonal, beim Z-Muster in Form eines Z. Oben links und unten rechts liegt deshalb die größte Aufmerksamkeit: Dort gehören Logo und Handlungsaufforderung hin. Was oben rechts oder unten links steht, muss durch Größe oder Farbe auffälliger gestaltet werden. Diese Modelle gelten vor allem für Seiten mit wenig Text, etwa Startseiten oder Plakate.
+
+**F-Muster:** Jakob Nielsen hat in Blickverfolgungsstudien (*Eye Tracking*) beobachtet, dass das Auge auf textreichen Seiten in Form eines F wandert. Man liest die Überschrift, die ersten Wörter des ersten Absatzes, eine Zwischenüberschrift und überfliegt dann nur noch den linken Rand nach unten. Die Folgerung: Wichtiges an den Anfang von Überschriften und Absätzen stellen und viele Zwischenüberschriften verwenden.
+
+## Farbe
+
+Farbpräferenzen sind persönlich und hängen ab von Kulturkreis, Prägung, Alter, Mode und Persönlichkeit. Rot bedeutet bei uns Gefahr oder Fehler, in China Glück. Aus Sicht der Usability gibt es aber Grundregeln:
+
+- Elemente mit unterschiedlichen Farben sollten unterschiedliche Eigenschaften haben: andere Funktion oder andere Wichtigkeit.
+- Wichtigere Elemente bekommen auffälligere Farben.
+- Bei Anwendungen, die man lange benutzt, sollten Farben nicht ablenken.
+- **Farbe nie allein** zur Unterscheidung einsetzen: Etwa 8 % der Männer und 0,5 % der Frauen haben eine Rot-Grün-Sehschwäche. Ein roter und ein grüner Status sehen für sie gleich aus. Immer zusätzlich Text, Symbol oder Form verwenden.
+- Auf ausreichenden **Kontrast** achten: mindestens 4,5 : 1 für normalen Text (mehr dazu im Kapitel [Barrierefreiheit](12-barrierefreiheit.qmd)).
+
+Eine verbreitete Faustregel für die Verteilung ist **60-30-10**: 60 % der Fläche in einer Grundfarbe (meist hell oder dunkel neutral), 30 % in einer Sekundärfarbe, 10 % in einer Akzentfarbe für das, was auffallen soll.
+
+**Werkzeuge zum Erzeugen von Farbschemata:** Adobe Color (color.adobe.com), Coolors, Colormind, Huemint, mycolor.space, Material Palette.
+**Werkzeuge zum Prüfen:** Coolors Contrast Checker, WebAIM Contrast Checker, der Kontrastanalysator in Adobe Color.
+
+## Typografie
+
+Die Schriftwahl beeinflusst Lesbarkeit und Stimmung. Bei der Auswahl geht es um Ästhetik und emotionale Wirkung; sollen Nutzende den Text aber **lesen**, geht es in erster Linie um Usability: Ist der Text ohne Anstrengung zu lesen? Zu beachten sind Kontrast, Schriftgröße und Schriftart; eine Frakturschrift etwa ist für viele schwer lesbar.
+
+### Grundregeln
+
+- **Wenige Schriften:** höchstens zwei bis drei, oft reicht eine Schriftfamilie in mehreren Stärken.
+- **Klare Hierarchie:** Überschrift 1, Überschrift 2, Fließtext deutlich unterscheidbar, durch Größe und Gewicht.
+- **Konsistenz ist wichtiger als Kreativität.**
+- **Pixel ist nicht gleich Pixel:** Die Darstellung unbedingt auf allen Zielgeräten testen.
+- Für den Fließtext gibt in vielen Fällen das System einen guten Standard vor. Serifenlose Schriften sind auf Bildschirmen verbreitet; auf hochauflösenden Displays sind gut gemachte Serifenschriften ebenso lesbar.
+
+### Größe, Zeilenlänge, Zeilenabstand
+
+| Regel | Empfehlung |
+| --- | --- |
+| Fließtext | **16 px** ist eine gute Größe; kleiner als 14 px ist nicht mehr zeitgemäß. Das Argument „Nutzende können die Schrift im Browser vergrößern“ zieht nicht: Usability-Tests zeigen, dass das kaum jemand macht. |
+| Zeilenlänge | **45 bis 85 Zeichen** pro Zeile, ideal um 65. Zu kurze Zeilen unterbrechen den Lesefluss, bei zu langen findet das Auge den Anfang der nächsten Zeile schlecht. |
+| Zeilenabstand | Der Browser-Standard von etwa 1,2 ist meist zu gering. Empfohlen werden **1,4 bis 1,6** für Fließtext. |
+| Ausrichtung | linksbündig; Blocksatz nie (Löcher zwischen Wörtern), zentriert nur für kurze Zeilen. |
+
+Alle Schriften wirken bei gleicher Pixelgröße unterschiedlich groß, weil ihre Kleinbuchstaben unterschiedlich hoch sind (die *x-Höhe*).
+
+### Hervorhebungen
+
+- **Fett** für Hervorhebungen im Text.
+- *Kursiv* bei ausreichender Schriftgröße.
+- GROSSBUCHSTABEN nur für kurze Überschriften und Button-Beschriftungen, nie für längere Texte.
+- Farbige Hervorhebungen können irritieren, weil Farbe im Web meist Links kennzeichnet. Aus demselben Grund sind **Unterstreichungen** ungeeignet.
+
+**Werkzeuge:** Google Fonts (kostenlose Webfonts), Fontpair und der Font-Pairing-Leitfaden von Canva für Schriftkombinationen, Type Scale (typescale.com) für Größenabstufungen.
+
+## Raster und Abstände
+
+Ein **Raster** (*Grid*) teilt die Fläche in Spalten und sorgt dafür, dass Elemente aneinander ausgerichtet sind. Websites verwenden oft 12 Spalten, weil sich 12 durch 2, 3, 4 und 6 teilen lässt.
+
+Für Abstände hat sich das **8-Punkt-System** durchgesetzt: Alle Abstände und Größen sind Vielfache von 8 (8, 16, 24, 32, 48 …), für feine Abstände auch 4. Das spart Entscheidungen und sorgt automatisch für einen gleichmäßigen Rhythmus. Dabei gilt das Gesetz der Nähe: Abstände **innerhalb** einer Gruppe kleiner als Abstände **zwischen** Gruppen.
+
+## Am Bestellsystem: Gestaltung für zwei Bildschirme {#sec-gestaltung-demo}
+
+::: {.demo}
+Gast-Tablet und Küchenbildschirm brauchen unterschiedliche Gestaltung, weil ihr Nutzungskontext völlig verschieden ist.
+
+| | Gast-Tablet | Küchenbildschirm |
+| --- | --- | --- |
+| Abstand | 40–60 cm | 1–3 m |
+| Licht | gedämpft, abends | hell, Neonlicht, Dampf |
+| Aufmerksamkeit | entspannt, nebenbei im Gespräch | ein Blick zwischendurch |
+| Schrift | Fließtext 18 px, Gerichtnamen 20 px fett | Tischnummern sehr groß, Positionen mindestens 24 px; vor Ort aus drei Metern testen |
+| Farbe | ruhiger Grund, eine Akzentfarbe nur für *Hinzufügen* und *Bestellen* | Farbe codiert nur den Status, immer mit Text |
+| Ziele (Fitts) | Buttons mindestens 44 × 44 px | Schaltflächen über die ganze Kartenbreite, mindestens 64 px hoch |
+
+**Gestaltgesetze im Warenkorb:** Menge, Name und Preis einer Position stehen nah beieinander (*Nähe*), zwischen den Positionen ist mehr Abstand. Die Summe steht durch eine Linie getrennt darunter (*gemeinsame Region*). Der Button *Bestellung abschicken* ist das einzige Element in der Akzentfarbe (*Ähnlichkeit*: Was gleich aussieht, tut Gleiches; was anders aussieht, ist besonders).
+
+**Hick auf der Speisekarte:** Statt 32 Gerichte auf einmal zeigt das Tablet zuerst die Kategorien; in jeder Kategorie stehen höchstens acht Gerichte.
+
+**Status ohne Farbe allein:** Der naheliegende erste Entwurf wären farbige Etiketten: grau, gelb, grün. Für Menschen mit Farbsehschwäche und auf einem Tablet in gedämpftem Licht sind sie kaum zu unterscheiden. Deshalb bekommt jeder Status ein eigenes Wort und eine eigene Position in einer Schrittanzeige (*Angekommen → Wird zubereitet → Fertig*), sodass er auch ohne Farbe eindeutig ist.
+:::
+
+## Übung {.unnumbered}
+
+::: {.uebung}
+**Vom Wireframe zum Mockup**
+
+**Ziel:** Euren Prototyp visuell gestalten und jede Entscheidung begründen.
+
+**Ablauf (Gruppen zu dritt, zwei Unterrichtseinheiten):**
+
+1. Erstellt mit Adobe Color oder Coolors ein Farbschema aus einer Grundfarbe, einer Sekundärfarbe und einer Akzentfarbe. Prüft alle Text-Hintergrund-Paare mit einem Kontrastprüfer.
+2. Wählt eine Schrift aus Google Fonts und legt eine Größenabstufung fest (z. B. 16 / 20 / 24 / 32 px).
+3. Gestaltet in Figma zwei Bildschirme eures Prototyps als Mockup. Verwendet nur Abstände aus dem 8-Punkt-System.
+4. Macht den Squint-Test: Fällt das Wichtigste zuerst auf?
+5. Beschriftet in Figma mindestens fünf Stellen, an denen ihr ein Gesetz aus diesem Kapitel angewendet habt.
+
+**Werkzeug:** Figma, Adobe Color oder Coolors, Google Fonts, WebAIM Contrast Checker.
+
+**Ergebnis:** zwei Mockups mit Anmerkungen, das Farbschema mit Kontrastwerten, die Schriftstufen.
+:::
+
+## Selbstcheck {.unnumbered .selbstcheck}
+
+<details><summary>Was besagen das Millersche und das Hicksche Gesetz, und was folgt daraus für die Gestaltung?</summary>
+
+Miller: Das Kurzzeitgedächtnis hält etwa 7 ± 2 Elemente (neuere Forschung: eher 4); Inhalte daher in Gruppen gliedern und Nutzende nichts merken lassen. Hick: Je mehr Wahlmöglichkeiten, desto länger dauert die Entscheidung; Optionen daher begrenzen oder in Schritte teilen.
+
+</details>
+
+<details><summary>Erkläre die Gestaltgesetze Nähe, Ähnlichkeit und gemeinsame Region an je einem Beispiel aus einer App.</summary>
+
+Nähe: Ein Label gehört zum Eingabefeld direkt darunter. Ähnlichkeit: Gleich aussehende Buttons tun Gleiches. Gemeinsame Region: Elemente in einer gemeinsamen Karte oder Kachel gehören zusammen.
+
+</details>
+
+<details><summary>Was ist das F-Muster, und welche Folgerung zieht man daraus?</summary>
+
+Auf textreichen Seiten lesen Menschen die Überschrift, den Anfang der ersten Absätze und überfliegen dann den linken Rand. Wichtige Wörter gehören deshalb an den Anfang von Überschriften und Absätzen, und lange Texte brauchen Zwischenüberschriften.
+
+</details>
+
+<details><summary>Warum darf Farbe nie das einzige Unterscheidungsmerkmal sein?</summary>
+
+Weil ein Teil der Menschen Farben nicht unterscheiden kann (etwa 8 % der Männer haben eine Rot-Grün-Sehschwäche) und weil Farben bei Licht, Bildschirm oder Ausdruck anders wirken. Zusätzlich braucht es Text, Symbole oder Formen.
+
+</details>
+
+<details><summary>Nenne vier typografische Regeln für gut lesbaren Fließtext auf Bildschirmen.</summary>
+
+Etwa 16 px Schriftgröße, 45 bis 85 Zeichen pro Zeile, Zeilenabstand 1,4 bis 1,6, linksbündig ohne Blocksatz, höchstens zwei bis drei Schriften, Hervorhebung fett statt unterstrichen.
+
+</details>

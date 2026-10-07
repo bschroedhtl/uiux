@@ -1,0 +1,181 @@
+# Designsysteme und Komponenten {#sec-designsysteme}
+
+Ein Button wird in einem Projekt nicht einmal gestaltet, sondern hundertmal verwendet. Wenn jede Person ihn ein bisschen anders baut, entstehen zwanzig Varianten, die alle fast gleich aussehen. Designsysteme verhindern das.
+
+::: {.merke}
+Ein **Designsystem** ist eine einheitliche Sammlung von Regeln, Mustern und wiederverwendbaren Bausteinen für die Gestaltung eines Produkts. Es umfasst Gestaltungsgrundsätze, **Design Tokens** (Farben, Schriften, Abstände), **Komponenten** (Buttons, Formularfelder, Karten) mit ihren Zuständen und Richtlinien zu ihrer Verwendung.
+:::
+
+## Warum Standards helfen
+
+Nutzende möchten, dass eine Anwendung so funktioniert, wie sie es gewöhnt sind (siehe *Jakobs Gesetz* im Kapitel [Visuelle Gestaltung](10-visuelle-gestaltung.qmd)). Weicht eine Anwendung davon ab, kann es für sie schwierig sein, sich daran zu gewöhnen. Deshalb veröffentlichen die großen Plattformen eigene Richtlinien:
+
+| Richtlinie | Anbieter | Für |
+| --- | --- | --- |
+| **Material Design 3** (m3.material.io) | Google | Android, Web |
+| **Human Interface Guidelines** (developer.apple.com/design) | Apple | iOS, iPadOS, macOS, watchOS |
+| **Fluent 2** (fluent2.microsoft.design) | Microsoft | Windows, Microsoft 365, Web |
+
+Wer eine App für eine dieser Plattformen baut, sollte ihre Richtlinien kennen. Viele Unternehmen veröffentlichen auch ihre eigenen Designsysteme, etwa IBM (*Carbon*), Atlassian oder die britische Regierung (*GOV.UK Design System*). Sie lohnen sich als Anschauungsmaterial, weil sie nicht nur zeigen, **wie** Komponenten aussehen, sondern auch erklären, **wann** man welche verwendet.
+
+### Vorteile
+
+- **Konsistenz** im gesamten Produkt: Gleiches sieht gleich aus und verhält sich gleich.
+- **Schnellere Entwicklung:** keine „Neuerfindung“ jedes Buttons.
+- **Einfachere Zusammenarbeit** zwischen Design und Entwicklung: Beide sprechen von derselben Komponente mit demselben Namen.
+- **Bessere Qualität:** Barrierefreiheit und Zustände werden einmal gründlich gelöst und dann überall wiederverwendet.
+
+## Design Tokens
+
+::: {.merke}
+**Design Tokens** sind benannte Gestaltungsentscheidungen, etwa `color-accent`, `font-size-body` oder `space-m`. Statt eines festen Werts wie `#1f4fd1` verwendet man überall den Namen. Ändert sich der Wert, ändert er sich an allen Stellen gleichzeitig, in Figma wie im Code.
+:::
+
+Tokens gibt es meist in zwei Ebenen:
+
+1. **Basiswerte** beschreiben, *was* es gibt: `blue-600 = #1f4fd1`, `space-4 = 16px`.
+2. **Semantische Tokens** beschreiben, *wofür* etwas verwendet wird: `color-action = blue-600`, `space-card-padding = space-4`.
+
+Der Vorteil der zweiten Ebene: Für einen dunklen Modus muss man nur die semantischen Tokens neu zuordnen. Komponenten verwenden nur semantische Tokens.
+
+In Figma heißen Tokens **Variables**, im Code sind es zum Beispiel CSS Custom Properties:
+
+```css
+:root {
+  --color-action: #1f4fd1;
+  --font-size-body: 1rem;
+  --space-m: 16px;
+}
+
+.button-primary {
+  background: var(--color-action);
+  padding: var(--space-m);
+}
+```
+
+## Atomic Design
+
+Ein verbreitetes Modell, um Komponenten zu ordnen, ist **Atomic Design** von Brad Frost. Es baut eine Oberfläche wie die Chemie aus kleinen Teilen auf:
+
+| Stufe | Beschreibung | Beispiel |
+| --- | --- | --- |
+| **Atome** | kleinste Bausteine, die man nicht weiter teilen kann | Button, Textfeld, Label, Icon |
+| **Moleküle** | einfache Gruppen von Atomen mit einer Aufgabe | Suchfeld = Textfeld + Button |
+| **Organismen** | größere, eigenständige Bereiche | Kopfzeile, Produktliste |
+| **Templates** | Seitenlayout mit Platzhaltern | Aufbau der Produktseite |
+| **Pages** | Template mit echten Inhalten | Produktseite für ein bestimmtes Produkt |
+
+## Zustände von Komponenten
+
+Eine Komponente ist erst fertig, wenn alle ihre Zustände gestaltet sind. Für einen Button sind das:
+
+| Zustand | Bedeutung |
+| --- | --- |
+| Standard (*default*) | nichts passiert |
+| Hover | Maus darüber (gibt es auf Touchscreens nicht) |
+| Fokus | mit der Tastatur ausgewählt; muss deutlich sichtbar sein |
+| Gedrückt (*active*) | wird gerade angetippt oder geklickt |
+| Deaktiviert (*disabled*) | im Moment nicht verwendbar |
+| Laden (*loading*) | die Aktion läuft |
+
+Für Listen und Seiten kommen dazu: **leer** (es gibt noch nichts), **Fehler** (etwas ist schiefgegangen) und **viel Inhalt** (Texte, die doppelt so lang sind wie geplant).
+
+## Komponentenbibliotheken im Code
+
+Für die Programmierung gibt es fertige Bibliotheken, die ein Designsystem umsetzen:
+
+- **Bootstrap:** CSS-Framework mit Komponenten für Web; schnell, sieht aber ohne Anpassung nach „Bootstrap“ aus.
+- **Angular Material:** Komponenten nach Material Design für Angular.
+- **PrimeNG**, **Tailwind CSS** und viele weitere.
+
+Eine Bibliothek ist ein guter Start, aber noch kein Designsystem: Sie liefert Bausteine, aber nicht die Entscheidungen, welche Bausteine wann verwendet werden.
+
+## Am Bestellsystem: ein kleines Designsystem {#sec-designsysteme-demo}
+
+::: {.demo}
+**Komponenteninventar.** Nach den ersten Mockups macht das Team ein Inventar: Welche Elemente gibt es, und wie oft wurden sie unterschiedlich gebaut? [Beispiel]{.fiktiv}
+
+| Element | Wo | Auffälligkeit |
+| --- | --- | --- |
+| Gericht-Karte | Speisekarte, Suchergebnis | zweimal gebaut: einmal mit, einmal ohne Button |
+| Hinweis „Heute aus“ | Speisekarte, Warenkorb | einmal als Text, einmal als graues Etikett |
+| Primär-Button | „Hinzufügen“, „Bestellung abschicken“, „Zubereitung starten“ | drei verschiedene Höhen und Eckenradien |
+| Entfernen-Button | Warenkorb | nur „×“ als Inhalt, ohne Beschriftung |
+| Status-Anzeige | Bestellungen am Tisch, Küchenansicht | am Tablet Schrittanzeige, in der Küche farbiges Etikett |
+| Meldungen | Bestätigung, Fehlerhinweis | jede Meldung anders gestaltet |
+
+**Tokens.** [Beispiel]{.fiktiv}
+
+| Semantischer Token | Verwendung |
+| --- | --- |
+| `color-surface` | Hintergrund von Karten und Seiten |
+| `color-text` / `color-text-muted` | Fließtext / Nebeninformation (Preis, Zeit) |
+| `color-action` | einzige Akzentfarbe: *Hinzufügen*, *Bestellung abschicken* |
+| `color-status-open` / `-preparing` / `-ready` | Status; nie ohne Text |
+| `font-size-body` / `-dish` / `-table` | 18 px / 20 px / 40 px (Küche) |
+| `space-s` / `-m` / `-l` | 8 / 16 / 32 px |
+| `size-touch-min` | 44 px Tablet, 64 px Küche |
+
+**Komponente Gericht-Karte** mit ihren Varianten:
+
+| Variante | Inhalt | Verhalten |
+| --- | --- | --- |
+| verfügbar, nicht im Warenkorb | Name, Preis, Kennzeichnung vegetarisch, Button *Hinzufügen* | Tippen auf *Hinzufügen* → Variante *im Warenkorb* |
+| verfügbar, im Warenkorb | wie oben, statt Button ein Mengenwähler − 2 + | − bei Menge 1 entfernt aus dem Warenkorb (BR-002) |
+| ausverkauft | Name, Preis, Text „Heute aus“, kein Button | nicht auswählbar (BR-001) |
+| lädt | Platzhalterflächen | – |
+
+Diese Komponente wird **einmal** in Figma als Component mit Variants gebaut. Wenn das Team sie später programmiert, entsteht sie ebenfalls genau einmal, mit denselben Token-Namen. So bleiben Entwurf und Code konsistent.
+:::
+
+## Übung {.unnumbered}
+
+::: {.uebung}
+**Ein Mini-Designsystem in Figma**
+
+**Ziel:** Die Gestaltung eures Mockups als wiederverwendbares System festhalten.
+
+**Ablauf (Gruppen zu dritt, eine Unterrichtseinheit):**
+
+1. Macht ein Komponenteninventar eurer Mockups: Screenshot jedes Elements, gruppiert nach Art. Wo gibt es fast gleiche Varianten?
+2. Legt in Figma **Variables** für Farben, Schriftgrößen und Abstände an, zuerst Basiswerte, dann semantische Namen.
+3. Baut drei Components mit allen Zuständen: einen Button (Standard, Fokus, gedrückt, deaktiviert, laden), die Gericht-Karte (vier Varianten) und eine Status-Anzeige.
+4. Ersetzt in euren Mockups alle festen Werte durch Variables und alle Elemente durch Instanzen eurer Components.
+5. Testet: Ändert die Akzentfarbe an einer Stelle. Ändert sie sich überall?
+
+**Werkzeug:** Figma (Variables, Components, Variants). Zur Anregung: Material 3 Design Kit in der Figma Community.
+
+**Ergebnis:** eine Figma-Seite „Designsystem“ mit Variables und drei Components samt Zuständen.
+:::
+
+## Selbstcheck {.unnumbered .selbstcheck}
+
+<details><summary>Was ist ein Designsystem, und welche Vorteile hat es?</summary>
+
+Eine einheitliche Sammlung von Regeln, Tokens, Komponenten und Richtlinien. Vorteile: Konsistenz, schnellere Entwicklung, einfachere Zusammenarbeit zwischen Design und Entwicklung, bessere Qualität.
+
+</details>
+
+<details><summary>Nenne die Gestaltungsrichtlinien von Google, Apple und Microsoft.</summary>
+
+Material Design (Google), Human Interface Guidelines (Apple), Fluent Design System (Microsoft).
+
+</details>
+
+<details><summary>Was sind Design Tokens, und warum unterscheidet man Basiswerte und semantische Tokens?</summary>
+
+Benannte Gestaltungsentscheidungen wie `color-action` statt eines festen Werts. Basiswerte beschreiben, was es gibt; semantische Tokens, wofür etwas verwendet wird. So lassen sich Themes wie ein dunkler Modus durch Umzuordnen der semantischen Tokens umsetzen, ohne Komponenten zu ändern.
+
+</details>
+
+<details><summary>Beschreibe die fünf Stufen von Atomic Design.</summary>
+
+Atome (kleinste Bausteine wie Button), Moleküle (einfache Gruppen wie Suchfeld), Organismen (größere Bereiche wie Kopfzeile), Templates (Seitenlayout mit Platzhaltern), Pages (Template mit echten Inhalten).
+
+</details>
+
+<details><summary>Welche Zustände sollte ein Button haben?</summary>
+
+Standard, Hover, Fokus, gedrückt, deaktiviert, laden.
+
+</details>

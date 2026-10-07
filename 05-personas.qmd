@@ -1,0 +1,266 @@
+# Personas und Empathy Map {#sec-personas}
+
+Nach der Forschung liegen Notizen, Zitate und Insights vor. Damit das ganze Team diese Erkenntnisse im Kopf behält, verdichtet man sie zu **Personas**: erfundenen, aber realistischen Menschen, die für eine Gruppe von Nutzenden stehen.
+
+## Was ist eine Persona?
+
+::: {.merke}
+Eine **Persona** ist ein prototypisches Nutzerprofil, das die Ziele, Eigenschaften, Verhaltensweisen und Motive einer Gruppe von Nutzenden beschreibt. Sie beruht auf Forschungsergebnissen und dient dazu, im ganzen Projektverlauf die Bedürfnisse der Nutzenden vor Augen zu haben.
+:::
+
+Eine Persona hat einen Namen, ein Gesicht und eine Geschichte. Das ist kein Selbstzweck. „Die Nutzer“ sind abstrakt, und jede Person im Team stellt sich darunter jemand anderen vor, meistens sich selbst. Über „Herbert, 71, der seine Lesebrille im Auto vergessen hat“ kann man dagegen konkret diskutieren: *Würde Herbert diesen Button finden?*
+
+### Was in eine Persona gehört
+
+| Bestandteil | Inhalt |
+| --- | --- |
+| Name, Foto, Alter, Rolle | macht die Persona greifbar; ein Foto aus einer Bilddatenbank, nie von echten Teilnehmenden |
+| Zitat | ein typischer Satz, der ihre Haltung auf den Punkt bringt |
+| Hintergrund | kurze Beschreibung der Lebens- oder Arbeitssituation |
+| Ziele | was sie mit dem Produkt erreichen will |
+| Frustrationen (Pain Points) | was sie heute stört oder hindert |
+| Nutzungskontext | wo, wann, mit welchem Gerät, unter welchen Bedingungen |
+| Technikaffinität | wie sicher sie mit digitalen Geräten umgeht |
+
+Was **nicht** hineingehört: Details ohne Bezug zum Produkt (Lieblingsfarbe, Sternzeichen), solange sie nicht das Verhalten erklären.
+
+### Arten von Personas
+
+- **Primäre Persona:** die wichtigste Zielgruppe. Für sie wird in erster Linie gestaltet. Wenn sie zufrieden ist, sind es die meisten.
+- **Sekundäre Persona:** hat zusätzliche Bedürfnisse, die erfüllt werden sollen, ohne die primäre Persona zu stören.
+- **Negative Persona (Anti-Persona):** für wen das Produkt ausdrücklich **nicht** gemacht ist. Das verhindert, dass man versucht, es allen recht zu machen.
+- **Proto-Persona:** eine Persona, die das Team vor der Forschung aus seinen Annahmen erstellt. In Lean UX ist das üblich, um schnell zu starten. Sie muss aber durch Forschung überprüft und korrigiert werden, sonst ist sie nur ein Vorurteil mit Namen.
+
+### Typische Fehler
+
+- **Erfunden statt erforscht:** Eine Persona ohne Forschung bestätigt nur, was das Team ohnehin glaubt.
+- **Zu viele Personas:** Drei bis fünf reichen für die meisten Produkte. Bei zwölf Personas berücksichtigt man keine.
+- **Demografie statt Verhalten:** „Weiblich, 25–35, Stadt“ ist eine Marketing-Zielgruppe, keine Persona. Entscheidend sind Ziele und Verhalten.
+- **Klischees:** Personas sollen die Vielfalt der echten Nutzenden zeigen, nicht Stereotype bestätigen.
+- **In der Schublade:** Eine Persona, die nach dem Workshop niemand mehr ansieht, ist wertlos. Gute Teams hängen ihre Personas sichtbar auf und nennen sie in Diskussionen beim Namen.
+
+## Empathy Map
+
+Eine **Empathy Map** hilft, sich in eine Persona hineinzuversetzen. Sie ordnet, was man über sie weiß, in vier Felder:
+
+::: {.empathy}
+::: {.feld}
+**Sagt**
+
+Was sagt die Person? Zitate aus Interviews.
+:::
+::: {.feld}
+**Denkt**
+
+Was geht ihr durch den Kopf, auch wenn sie es nicht ausspricht? Sorgen, Wünsche.
+:::
+::: {.feld}
+**Tut**
+
+Was tut sie? Beobachtetes Verhalten, Routinen.
+:::
+::: {.feld}
+**Fühlt**
+
+Welche Emotionen hat sie? Ängste, Freude, Ärger.
+:::
+:::
+
+Erweiterte Varianten fragen zusätzlich: Was **sieht** sie (Umfeld, Mitbewerber, Trends)? Was **hört** sie (Einflüsse von Freunden, Kollegen, Medien)? Und am unteren Rand stehen **Pains** (Ängste, Hindernisse) und **Gains** (was sie sich wünscht, woran sie Erfolg misst).
+
+Spannend sind die **Widersprüche** zwischen den Feldern: Wenn jemand *sagt* „Das Tablet ist praktisch“, aber trotzdem den Kellner herbeiwinkt (*tut*), steckt dahinter ein Bedürfnis, das man gestalten kann.
+
+::: {.merke}
+Eine **Empathy Map** ist ein Werkzeug, um die Perspektive einer Persona einzunehmen. Sie gliedert das Wissen über die Persona in die Felder *Sagt, Denkt, Tut, Fühlt* (oft ergänzt um *Sieht, Hört, Pains, Gains*). Ziel ist ein tieferes Verständnis für Nutzungskontext und Emotionen.
+:::
+
+## Am Bestellsystem: drei Personas {#sec-personas-demo}
+
+::: {.demo}
+Aus den Erkenntnissen der Forschung ergeben sich zwei Gruppen von Gästen, die sich deutlich unterscheiden, und eine Persona für die Küche. Alle drei sind [Beispiel]{.fiktiv}.
+:::
+
+::: {.persona}
+### Lena Hofer {.unnumbered}
+
+[17 · Schülerin · primäre Persona Gast]{.rolle}
+
+> „Wir sind zu sechst, jeder will was anderes, und dann dauert's ewig, bis einer den Kellner erwischt.“
+
+**Hintergrund:** Geht ein- bis zweimal pro Woche mit Freundinnen nach der Schule oder am Wochenende essen. Zahlt mit Taschengeld, achtet auf den Preis.
+
+**Ziele**
+
+- schnell bestellen, ohne auf den Kellner zu warten
+- sehen, was es kostet, bevor sie bestellt
+- später etwas nachbestellen (meist Getränke)
+
+**Frustrationen**
+
+- wenn die Gruppe ein Gerät herumreichen muss und jeder neu anfangen muss
+- wenn sie nicht weiß, ob die Bestellung angekommen ist
+
+**Nutzungskontext:** Tablet am Tisch, nebenbei im Gespräch, Handy in der anderen Hand. Liest nicht, sondern scannt.
+
+**Technikaffinität:** sehr hoch; erwartet, dass alles funktioniert wie in Apps, die sie kennt.
+:::
+
+::: {.persona}
+### Herbert Leitner {.unnumbered}
+
+[71 · Pensionist · sekundäre Persona Gast]{.rolle}
+
+> „Ich will einen Menschen fragen können, ob das scharf ist.“
+
+**Hintergrund:** Isst jeden Sonntag mit seiner Frau im selben Gasthaus. Hat ein Smartphone, nutzt es vor allem für Anrufe und Fotos der Enkel.
+
+**Ziele**
+
+- in Ruhe aussuchen, ohne gedrängt zu werden
+- sicher sein, dass das Richtige bestellt ist
+- bei Fragen schnell Hilfe bekommen
+
+**Frustrationen**
+
+- kleine Schrift und blasse Farben; seine Lesebrille hat er oft nicht dabei
+- Fachbegriffe und englische Wörter, wie er sie aus manchen Apps kennt
+- Angst, aus Versehen etwas Falsches oder zu viel zu bestellen
+
+**Nutzungskontext:** Tablet am Tisch, gedämpftes Licht am Abend, viel Zeit.
+
+**Technikaffinität:** gering; tippt vorsichtig, liest jeden Text.
+:::
+
+::: {.persona}
+### Marko Petrović {.unnumbered}
+
+[34 · Koch am Pass · primäre Persona Küche]{.rolle}
+
+> „Ich hab keine Hand frei. Wenn ich was sehen muss, dann von da drüben.“
+
+**Hintergrund:** Leitet am Abend den Pass, also die Stelle, an der Bestellungen ausgerufen und fertige Teller kontrolliert werden. Koordiniert drei Köche.
+
+**Ziele**
+
+- auf einen Blick sehen, welche Tische warten und wie lange schon
+- keine Bestellung übersehen, auch wenn zehn gleichzeitig kommen
+- Gerichte, die aus sind, sofort sperren, bevor jemand sie bestellt
+
+**Frustrationen**
+
+- Bestellungen, die einzeln statt pro Tisch erscheinen
+- Bildschirme, die man berühren muss, mit nassen oder fettigen Händen
+- Nachbestellungen, die er zu spät bemerkt
+
+**Nutzungskontext:** Bildschirm an der Wand über dem Pass, ein bis drei Meter Abstand, laut, heiß, Zeitdruck.
+
+**Technikaffinität:** mittel; benutzt das Kassensystem täglich, hat keine Geduld für Menüs.
+:::
+
+::: {.demo}
+**Empathy Map für Marko** [Beispiel]{.fiktiv}
+
+::: {.empathy}
+::: {.feld}
+**Sagt**
+
+- „Tisch 7 wartet schon zwanzig Minuten!“
+- „Wer hat das Schnitzel für die Vier?“
+- „Das Gulasch ist aus, sagt's dem Service.“
+:::
+::: {.feld}
+**Denkt**
+
+- Hoffentlich habe ich keine Bestellung übersehen.
+- Welcher Tisch ist als Nächstes dran?
+- Hat jemand das Gulasch noch bestellt, bevor ich es gesperrt habe?
+:::
+::: {.feld}
+**Tut**
+
+- schaut alle paar Sekunden zum Bildschirm
+- ruft Bestellungen laut an die Köche aus
+- schreibt Sonderwünsche auf einen Zettel
+- wischt sich die Hände an der Schürze ab, bevor er etwas berührt
+:::
+::: {.feld}
+**Fühlt**
+
+- gestresst, wenn mehrere Tische gleichzeitig bestellen
+- verantwortlich für jeden Teller, der rausgeht
+- erleichtert, wenn der Pass leer ist
+:::
+:::
+
+**Pains:** übersehene Nachbestellungen, Bildschirm aus der Entfernung schlecht lesbar, Touch mit nassen Händen.
+**Gains:** Überblick pro Tisch, Wartezeit auf einen Blick, Gericht mit einem Handgriff sperren.
+
+**Widerspruch, der zum Design führt:** Marko *sagt*, er brauche den Bildschirm „nur zum Nachschauen“, *tut* aber nichts anderes, als ständig darauf zu schauen. Die Küchenansicht muss also aus der Entfernung lesbar sein und darf fast nie eine Berührung verlangen.
+:::
+
+::: {.demo}
+**Was die Personas für die User Stories bedeuten**
+
+| Persona | Erkenntnis | Auswirkung auf die User Stories |
+| --- | --- | --- |
+| Lena | Gruppen bestellen nacheinander auf einem Gerät | Nach dem Absenden muss das Tablet sofort für die nächste Person bereit sein. |
+| Lena | Getränke werden mehrfach nachbestellt | „Nochmal dasselbe“ als schnelle Aktion prüfen (neue Story). |
+| Herbert | englische Begriffe und kleine Schrift | Durchgehend deutsche Begriffe; Mindestschriftgröße als Akzeptanzkriterium. |
+| Herbert | Angst, Falsches zu bestellen | Zusammenfassung vor dem Absenden; Stornieren gut sichtbar. |
+| Marko | Überblick pro Tisch statt pro Bestellung | Küchenansicht nach Tisch und Wartezeit gruppieren, nicht nur nach Status. |
+| Marko | keine Hand frei | Statuswechsel mit großen Zielen; Lesbarkeit aus drei Metern. |
+
+Im Kapitel [Vom UX-Design zum Product Backlog](07-product-backlog.qmd) werden aus diesen Auswirkungen ausformulierte User Stories mit Akzeptanzkriterien und ein geordnetes Product Backlog.
+:::
+
+## Übung {.unnumbered}
+
+::: {.uebung}
+**Personas aus eigener Forschung**
+
+**Ziel:** Aus euren Interviews zwei Personas und eine Empathy Map erstellen.
+
+**Ablauf (Gruppen zu dritt, eine Unterrichtseinheit):**
+
+1. Legt eure Insights und Interviewnotizen aus dem letzten Kapitel auf. Sucht Muster: Welche Personen hatten ähnliche Ziele und ähnliches Verhalten?
+2. Fasst jedes Muster zu einer Persona zusammen. Entscheidet, welche primär und welche sekundär ist.
+3. Füllt für jede Persona alle Bestandteile aus der Tabelle „Was in eine Persona gehört“ aus. Jede Aussage muss sich auf mindestens eine Interviewnotiz zurückführen lassen.
+4. Erstellt für die primäre Persona eine Empathy Map. Sucht einen Widerspruch zwischen *Sagt* und *Tut*.
+5. Ergänzt eine Tabelle: Was bedeutet jede Persona für die User Stories?
+
+**Werkzeug:** Papier oder FigJam. In FigJam gibt es Vorlagen für Personas und Empathy Maps; Figma Community bietet weitere. Porträtfotos aus Bilddatenbanken wie Unsplash, nie Fotos echter Interviewpartner.
+
+**Ergebnis:** zwei Personas, eine Empathy Map, eine Tabelle mit Auswirkungen auf die User Stories.
+:::
+
+## Selbstcheck {.unnumbered .selbstcheck}
+
+<details><summary>Was ist eine Persona, und wozu dient sie?</summary>
+
+Ein prototypisches Nutzerprofil, das Ziele, Eigenschaften, Verhalten und Motive einer Gruppe von Nutzenden beschreibt. Es beruht auf Forschung und hilft dem Team, die Bedürfnisse der Nutzenden während des ganzen Projekts vor Augen zu haben und konkret darüber zu diskutieren.
+
+</details>
+
+<details><summary>Was unterscheidet eine primäre, eine sekundäre und eine negative Persona?</summary>
+
+Für die primäre Persona wird in erster Linie gestaltet. Die sekundäre hat zusätzliche Bedürfnisse, die erfüllt werden, ohne die primäre zu stören. Die negative Persona beschreibt, für wen das Produkt ausdrücklich nicht gedacht ist.
+
+</details>
+
+<details><summary>Warum ist „Frau, 25–35, wohnt in der Stadt“ keine gute Persona?</summary>
+
+Das ist eine demografische Zielgruppe. Eine Persona beschreibt Ziele, Verhalten, Frustrationen und Nutzungskontext, denn diese bestimmen, wie jemand ein Produkt benutzt, nicht Alter oder Wohnort allein.
+
+</details>
+
+<details><summary>Welche Felder hat eine Empathy Map, und warum sind Widersprüche zwischen ihnen interessant?</summary>
+
+Sagt, Denkt, Tut, Fühlt (oft ergänzt um Sieht, Hört, Pains, Gains). Widersprüche, etwa zwischen Gesagtem und Getanem, zeigen unausgesprochene Bedürfnisse, die man gestalten kann.
+
+</details>
+
+<details><summary>Was ist eine Proto-Persona, und welche Gefahr hat sie?</summary>
+
+Eine Persona, die das Team aus Annahmen erstellt, bevor geforscht wurde, um schnell zu starten. Wird sie nicht durch Forschung überprüft, verfestigt sie die Vorurteile des Teams.
+
+</details>

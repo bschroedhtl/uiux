@@ -1,0 +1,344 @@
+# Vom UX-Design zum Product Backlog {#sec-backlog}
+
+Nach Sprint 0 wissen wir, für wen wir bauen, was diese Menschen erreichen wollen und wo sie heute scheitern. Jetzt wird daraus ein Plan, mit dem ein Scrum-Team arbeiten kann: User Stories und ein geordnetes **Product Backlog**. Dieses Kapitel zeigt Schritt für Schritt, wie UX-Ergebnisse zu Backlog-Einträgen werden und was danach mit ihnen im Scrum-Ablauf passiert.
+
+Der Weg in diesem Kapitel:
+
+1. **Insights** aus Research, Personas und Journeys
+2. **Product Goal**: das Ziel aus Sicht der Nutzenden
+3. **Story Map**: die Journey wird zum Gerüst für Stories
+4. **User Stories** mit Akzeptanzkriterien
+5. **Product Backlog**: geordnet, mit Discovery-Einträgen
+6. **Backlog Refinement**: Wireframes und Tests werden an Stories gehängt
+7. **Sprint Planning**: die ersten Stories kommen in den Sprint
+
+## Vom Insight zur User Story
+
+Jeder Eintrag im Backlog sollte sich auf eine Erkenntnis zurückführen lassen. Der Weg dorthin hat drei Schritte:
+
+| Schritt | Beispiel aus dem Bestellsystem |
+| --- | --- |
+| **Beobachtung** (Research) | Kein beobachteter Gast hat auf die Tischnummer geachtet. |
+| **Insight** (Deutung) | Gäste kennen ihre Tischnummer nicht und sollen sie auch nicht kennen müssen. |
+| **User Story** (Backlog) | Als Gast möchte ich bestellen, ohne eine Tischnummer einzugeben, damit ich schnell fertig bin. |
+
+Umgekehrt gilt: Ein Wunsch, für den es keine Beobachtung gibt, ist eine **Annahme**. Er kommt nicht als fertige Story ins Backlog, sondern als **Discovery-Eintrag**: eine Aufgabe, die Annahme zu prüfen.
+
+## Das Product Goal
+
+Bevor einzelne Stories entstehen, braucht das Backlog eine Richtung. In Scrum heißt sie **Product Goal**: das langfristige Ziel, auf das alle Einträge im Backlog hinarbeiten. Die Vision beschreibt eine Idee; das Product Goal beschreibt, woran man Erfolg erkennt, und nach der Forschung kann man es aus Sicht der Nutzenden formulieren.
+
+| Vision (vor der Forschung) | Product Goal (nach der Forschung) |
+| --- | --- |
+| Gäste bestellen digital über ein Tablet; die Küche sieht Bestellungen sofort. | Gäste bestellen ohne Warten auf den Service und wissen jederzeit, wann ihr Essen kommt; die Küche verliert keine Bestellung aus den Augen. |
+
+## Story Mapping
+
+Eine Journey Map zeigt den Weg einer Persona. Ein Backlog ist eine geordnete Liste. Dazwischen steht die **Story Map**.
+
+::: {.merke}
+Eine **Story Map** (Jeff Patton) ordnet User Stories zweidimensional: **Horizontal** stehen die Aktivitäten der Nutzenden in der Reihenfolge, in der sie sie ausführen (das *Rückgrat*, meist aus den Phasen der Journey Map). **Vertikal** stehen darunter die User Stories, die diese Aktivität unterstützen, nach Wichtigkeit sortiert. Waagrechte Schnitte durch die Map bilden **Releases**: Der oberste Schnitt ist die kleinste Version, die den ganzen Weg bereits ermöglicht.
+:::
+
+Der Vorteil gegenüber einer flachen Liste: Man sieht, ob ein Release den **ganzen Weg** abdeckt. Ein Release mit einer perfekten Speisekarte, aber ohne Statusanzeige lässt Gäste ratlos zurück. Ein Release, in dem jede Aktivität eine einfache Lösung hat, ist dagegen schon benutzbar. Man nennt diese erste, durchgehende Version auch *Walking Skeleton*.
+
+So entsteht eine Story Map:
+
+1. **Rückgrat legen:** die Phasen der Journey Map als Aktivitäten von links nach rechts.
+2. **Stories sammeln:** unter jede Aktivität alles schreiben, was die Persona dort braucht. Pain Points und Chancen der Journey sind die beste Quelle.
+3. **Sortieren:** in jeder Spalte das Wichtigste nach oben.
+4. **Schneiden:** waagrechte Linien ziehen. Was über der ersten Linie liegt, ist Release 1.
+
+Woher die Teile der Story Map kommen:
+
+| Teil | Quelle in der UX-Arbeit |
+| --- | --- |
+| Aktivitäten (Rückgrat) | Phasen der Journey Maps |
+| Nutzergruppen | Personas und alle Rollen aus dem Service Blueprint |
+| Stories | Pain Points und Chancen der Journeys, Insights aus der Forschung |
+| Reihenfolge in der Spalte | wie oft und wie stark der Pain Point in der Forschung auftrat |
+
+## User Stories schreiben
+
+::: {.merke}
+Eine **User Story** beschreibt eine Anforderung aus Sicht der Nutzenden: *Als* [Rolle] *möchte ich* [Ziel], *damit* [Nutzen]. Sie wird durch **Akzeptanzkriterien** ergänzt, die festlegen, wann die Story erfüllt ist, oft im Format *Given – When – Then*.
+:::
+
+### Rolle und Persona
+
+In der Story steht die **Rolle** („Als Gast“), weil die Story für alle Gäste gilt. Die **Persona** wird zusätzlich vermerkt, damit das Team weiß, an wen es beim Gestalten denken soll. So bleibt die Story allgemein, und die Forschung geht trotzdem nicht verloren.
+
+### Gute User Stories: INVEST
+
+| Buchstabe | Bedeutung |
+| --- | --- |
+| **I**ndependent | möglichst unabhängig von anderen Stories |
+| **N**egotiable | verhandelbar; beschreibt das Ziel, nicht die fertige Lösung |
+| **V**aluable | hat einen erkennbaren Nutzen für Nutzende |
+| **E**stimable | das Team kann den Aufwand schätzen |
+| **S**mall | passt in einen Sprint |
+| **T**estable | lässt sich mit Akzeptanzkriterien prüfen |
+
+Das *N* ist für UX-Design besonders wichtig: Eine Story beschreibt das **Bedürfnis**, nicht den Bildschirm. „Als Gast möchte ich einen grünen Button rechts unten“ ist keine User Story, sondern eine Gestaltungsentscheidung, die im Refinement getroffen und getestet wird.
+
+### UX-Akzeptanzkriterien
+
+Neben fachlichen Kriterien („die Bestellung wird angelegt“) gehören auch Kriterien zur Benutzbarkeit in jede Story mit Oberfläche. Sie müssen genauso **prüfbar** sein:
+
+| Unbrauchbar | Prüfbar |
+| --- | --- |
+| Die Küchenansicht ist gut lesbar. | Tischnummern sind mindestens 40 px hoch und aus 3 m Entfernung lesbar (geprüft vor Ort). |
+| Die Bestellung ist einfach. | 4 von 5 Testpersonen bestellen ohne Hilfe in unter 2 Minuten. |
+| Die App ist barrierefrei. | Alle Bedienelemente haben einen zugänglichen Namen; Kontrast mindestens 4,5 : 1. |
+
+### Stories schneiden
+
+Viele Stories sind beim ersten Aufschreiben zu groß für einen Sprint. Dann werden sie geschnitten, und zwar **senkrecht**: Jeder Teil muss für sich einen Nutzen haben. Falsch ist ein waagrechter Schnitt nach Technik („zuerst die Datenbank, dann die Oberfläche“), weil keiner der Teile allein etwas bringt.
+
+| Schnitt nach … | Beispiel: „Als Gast möchte ich bestellen“ |
+| --- | --- |
+| Schritten im Ablauf | auswählen · Warenkorb prüfen · abschicken |
+| Normalfall und Sonderfall | Bestellung ohne Probleme · Gericht wurde inzwischen gesperrt |
+| Varianten | Speisen · Getränke nachbestellen |
+| Regeln | ohne Mengenprüfung · mit Mengenprüfung |
+
+Die UX-Arbeit hilft beim Schneiden: Die Schritte des User Flows und die Fehlerfälle aus der Journey sind oft genau die richtigen Schnittkanten.
+
+## Das Product Backlog
+
+::: {.merke}
+Das **Product Backlog** ist in Scrum die geordnete Liste von allem, was für das Produkt getan werden muss. Der **Product Owner** ist für Inhalt und Reihenfolge verantwortlich; das ganze Team arbeitet daran mit. Oben stehen die Einträge, die als Nächstes umgesetzt werden; sie sind klein und genau beschrieben. Weiter unten stehen größere, noch grobe Einträge.
+:::
+
+### Was ins Backlog gehört
+
+Nicht nur Features. Ein Backlog, das UX ernst nimmt, enthält drei Arten von Einträgen:
+
+| Art | Beispiel |
+| --- | --- |
+| **User Story** (Delivery) | Als Gast möchte ich den Status meiner Bestellungen sehen. |
+| **Discovery-Eintrag** (Forschung, Test) | Prüfen, ob die Küche einen Touchscreen bedienen kann (Beobachtung im Mittagsservice). |
+| **UX-Schuld** (bekanntes Problem) | Im Test fanden 3 von 5 Personen den Stornieren-Button nicht. |
+
+### Reihenfolge
+
+Der Product Owner ordnet das Backlog. Die UX-Arbeit liefert dafür Argumente, die über Bauchgefühl hinausgehen:
+
+- **Nutzen:** Wie stark ist der Pain Point, und wie viele Personas betrifft er? Ein Problem, das in fünf von sechs Interviews vorkam, wiegt mehr als eines, das einmal erwähnt wurde.
+- **Risiko:** Stories, die auf ungeprüften Annahmen beruhen, kommen nicht nach oben. Nach oben kommt der Discovery-Eintrag, der die Annahme prüft.
+- **Zusammenhang:** Release 1 der Story Map muss vollständig sein, bevor Release 2 beginnt; sonst entsteht kein benutzbares Produkt.
+- **Aufwand:** Das Team schätzt; bei gleichem Nutzen kommt das Günstigere zuerst.
+
+## Das Backlog im Scrum-Ablauf
+
+Eine User Story durchläuft vom ersten Eintrag bis zum fertigen Inkrement mehrere Stationen. An jeder Station steuert UX-Design etwas bei:
+
+| Station | Was mit der Story passiert | Beitrag der UX-Arbeit |
+| --- | --- | --- |
+| **Story Map** (Sprint 0) | Story entsteht als Haftnotiz | Persona, Journey-Phase, Pain Point |
+| **Product Backlog** | Story wird formuliert und eingeordnet | Nutzen- und Risikoargumente für die Reihenfolge |
+| **Backlog Refinement** (laufend, etwa einen Sprint vor der Umsetzung) | Story wird genauer beschrieben, geschnitten, geschätzt | Wireframe oder Prototyp, getestet mit Nutzenden; UX-Akzeptanzkriterien |
+| **Definition of Ready** | Team entscheidet, ob die Story bereit ist | Prüfpunkt: getesteter Entwurf vorhanden |
+| **Sprint Planning** | Story kommt in den Sprint, Sprint Goal wird formuliert | Sprint Goal aus Sicht der Nutzenden |
+| **Sprint** | Story wird umgesetzt | Rückfragen klären, Designsystem-Komponenten |
+| **Definition of Done** | Inkrement ist fertig | Barrierefreiheit geprüft, Texte in Nutzersprache |
+| **Sprint Review** | Ergebnis wird gezeigt, Feedback gesammelt | Usability-Test des Inkrements; neue Einträge fürs Backlog |
+
+Das ist der Kreislauf aus dem Kapitel [UX im Scrum-Prozess](02-ux-scrum.qmd), gesehen aus der Sicht einer einzelnen Story.
+
+### Was neben dem Backlog festgehalten wird
+
+Manche Erkenntnisse sind keine einzelne Story, sondern gelten für viele. Sie werden neben dem Backlog dokumentiert und von den Stories referenziert:
+
+- **Glossar:** die Wörter, die Nutzende verwenden. Wenn Gäste „Getränke“ sagen und das Team „Beverages“, entstehen Missverständnisse in der Oberfläche.
+- **Geschäftsregeln** mit eindeutiger ID und **Quelle** (welches Interview, welche Beobachtung).
+- **Offene Fragen:** alles, was noch eine Annahme ist, mit dem Discovery-Eintrag, der es klären soll.
+- **Personas, Journeys, Wireframes:** verlinkt in der Story, damit jede Person im Team die Gründe kennt.
+
+## Am Bestellsystem: vom Sprint 0 zum ersten Sprint {#sec-backlog-demo}
+
+::: {.demo}
+**Story Map Gast** [Beispiel]{.fiktiv}, Rückgrat aus der Journey von Lena:
+
+| | Ankommen | Auswählen | Bestellen | Warten | Nachbestellen |
+| --- | --- | --- | --- | --- | --- |
+| **Release 1** | Tablet zeigt sofort die Speisekarte; Tisch ist eingestellt | Gerichte mit Preis; „Heute aus“ deutlich erkennbar | Warenkorb, absenden, Bestätigung; Tablet sofort frei für die nächste Person | Status aller Bestellungen am Tisch, live | – |
+| **Release 2** | – | Kategorien und Kennzeichnung *vegetarisch* | Stornieren, solange noch nicht in Zubereitung | – | „Nochmal bestellen“ |
+| **Später** | Sprache wählen | Allergene | Service rufen | geschätzte Wartezeit | – |
+
+**Story Map Küche und Service**, Rückgrat aus der Journey von Marko und dem Service Blueprint:
+
+| | Bestellung annehmen | Zubereiten | Übergeben | Verfügbarkeit |
+| --- | --- | --- | --- | --- |
+| **Release 1** | neue Bestellungen pro Tisch, live, mit Signal | Status mit einem Tippen weiterschalten | – | Gericht sperren und freigeben |
+| **Release 2** | offene Bestellung stornieren | Wartezeit pro Tisch | Service sieht fertige Teller und meldet „serviert“ | – |
+| **Später** | – | Archiv | – | Auswertungen |
+
+Release 1 ist schmal, deckt aber den ganzen Weg ab: Ein Gast kann bestellen, die Küche kann kochen, und der Gast weiß, wann sein Essen kommt.
+:::
+
+::: {.demo}
+**Product Backlog nach Sprint 0** [Beispiel]{.fiktiv}, vom Product Owner geordnet:
+
+| Nr. | Eintrag | Art | Persona | Release |
+| --- | --- | --- | --- | --- |
+| 1 | US-001 Gast: die Speisekarte sehen und erkennen, was heute aus ist | Story | Lena, Herbert | 1 |
+| 2 | US-002 Gast: Gerichte auswählen und abschicken, ohne eine Tischnummer einzugeben | Story | Lena | 1 |
+| 3 | D-01 Beobachten, ob die Küche einen Touchscreen mit nassen Händen bedienen kann | Discovery | Marko | – |
+| 4 | US-006 Küche: neue Bestellungen pro Tisch sehen, ohne neu zu laden | Story | Marko | 1 |
+| 5 | US-007 Küche: den Status einer Bestellung mit einem Tippen weiterschalten | Story | Marko | 1 |
+| 6 | US-003 Gast: den Status aller Bestellungen am Tisch sehen, ohne eine Nummer einzugeben | Story | Lena, Herbert | 1 |
+| 7 | US-008 Küche: ein Gericht sperren und wieder freigeben | Story | Marko | 1 |
+| 8 | D-02 Interview mit Servicepersonal: Wie werden fertige Teller heute übergeben? | Discovery | (neue Persona nötig) | – |
+| 9 | US-004 Gast: eine Bestellung stornieren, solange sie noch nicht in Zubereitung ist | Story | Herbert | 2 |
+| 10 | US-005 Gast: ein Getränk mit einem Tippen nachbestellen | Story | Lena | 2 |
+| 11 | US-009 Küche: eine offene Bestellung stornieren | Story | Marko | 2 |
+| 12 | US-010 Service: sehen, welche Teller für welchen Tisch am Pass warten | Story | (nach D-02) | 2 |
+| 13 | US-011 Küche: fertige Bestellungen im Archiv sehen | Story | Marko | später |
+
+: Product Backlog nach Sprint 0 {tbl-colwidths="[6,56,12,16,10]"}
+
+Warum diese Reihenfolge: D-01 steht vor den Küchen-Stories, weil US-007 („mit einem Tippen“) auf einer ungeprüften Annahme beruht. US-010 hängt an D-02, weil es für den Service noch keine Forschung gibt. Das Archiv steht ganz unten, weil es in keinem Interview als Problem vorkam.
+:::
+
+::: {.demo}
+**Zwei Stories ausführlich**
+
+**US-002: Bestellen ohne Tischnummer**
+
+*Als* Gast *möchte ich* Gerichte auswählen und abschicken, ohne meine Tischnummer zu kennen, *damit* ich schnell bestelle und das Tablet weitergeben kann. Persona: Lena. Quelle: Beobachtung (Tischnummer), Journey Lena (Tablet weitergeben).
+
+```gherkin
+Given das Tablet ist Tisch 12 zugeordnet
+When  der Gast seine Auswahl abschickt
+Then  wird die Bestellung für Tisch 12 angelegt, ohne nach einer Tischnummer zu fragen
+
+Given der Gast hat eine Bestellung abgeschickt
+When  die Küche sie erhalten hat
+Then  zeigt das Tablet "Die Küche hat deine Bestellung"
+And   der Warenkorb ist leer und bereit für die nächste Person
+
+Given ein Gericht im Warenkorb wurde inzwischen gesperrt
+When  der Gast abschickt
+Then  nennt ein Hinweis das Gericht und bietet "Entfernen" oder "Ersetzen" an
+And   die übrigen Gerichte bleiben im Warenkorb
+```
+
+UX-Kriterien: Alle Bedienelemente sind mindestens 44 × 44 px groß. Alle Texte sind auf Deutsch.
+
+Im Refinement wird US-002 nach *Normalfall und Sonderfall* geschnitten: US-002a (Bestellung ohne Probleme) kommt in Sprint 1, US-002b (Gericht inzwischen gesperrt) in Sprint 2, weil sie das Sperren durch die Küche (US-008) voraussetzt.
+
+**US-006: Neue Bestellungen in der Küche**
+
+*Als* Küche *möchte ich* neue Bestellungen nach Tisch gebündelt sehen, ohne die Seite neu zu laden, *damit* ich keine Bestellung übersehe und weiß, welcher Tisch am längsten wartet. Persona: Marko. Quelle: Contextual Inquiry in der Küche.
+
+```gherkin
+Given die Küchenansicht ist geöffnet
+When  ein Gast eine Bestellung abschickt
+Then  erscheint sie innerhalb von 2 Sekunden in der Spalte "Offen"
+And   ein Signalton ertönt und die Bestellung bleibt hervorgehoben, bis sie angetippt wird
+
+Given Tisch 7 hat zwei offene Bestellungen
+When  der Koch die Küchenansicht ansieht
+Then  stehen beide unter "Tisch 7" mit der Wartezeit der älteren Bestellung
+```
+
+UX-Kriterien: Tischnummern sind mindestens 40 px hoch und aus 3 m lesbar (vor Ort geprüft). Jede Aktion braucht höchstens ein Tippen auf eine Fläche von mindestens 64 px Höhe.
+:::
+
+::: {.demo}
+**Glossar, Geschäftsregeln und offene Fragen** [Beispiel]{.fiktiv}
+
+Glossar (Auszug): **Gericht** (auch Getränke), **Bestellung**, **Bestellungen am Tisch** (alle abgeschickten Bestellungen eines Tisches), **Pass** (Übergabestelle zwischen Küche und Service), **Service** (bringt fertige Gerichte an den Tisch).
+
+| ID | Geschäftsregel | Quelle |
+| --- | --- | --- |
+| BR-001 | Nur verfügbare Gerichte können bestellt werden. Wird ein Gericht zwischen Auswahl und Absenden gesperrt, wird der Gast informiert. | Restaurantleitung, Journey Marko |
+| BR-002 | Die Menge einer Bestellposition ist mindestens 1. | Restaurantleitung |
+| BR-003 | Eine Bestellung enthält mindestens eine Bestellposition. | Restaurantleitung |
+| BR-004 | Jedes Tablet ist fest einem Tisch zugeordnet; Gäste geben keine Tischnummer ein. | Beobachtung |
+| BR-005 | Der Status ändert sich nur vorwärts: Offen, In Zubereitung, Fertig, Serviert. | Contextual Inquiry, Service Blueprint |
+| BR-006 | Storniert werden kann nur eine Bestellung im Status *Offen*. | Interviews Küche |
+| BR-007 | Nach dem Absenden können Gerichte und Mengen nicht mehr geändert werden. | Restaurantleitung |
+| BR-008 | Mehrere Gäste am selben Tisch können getrennt bestellen. | Beobachtung, Journey Lena |
+
+**Offene Fragen:**
+
+- Gibt es eine Höchstmenge pro Gericht? Klären mit der Restaurantleitung.
+- Kann die Küche einen Touchscreen bedienen? Klärt D-01.
+- Wie übergibt die Küche heute fertige Teller an den Service? Klärt D-02.
+:::
+
+::: {.demo}
+**Sprint Planning für Sprint 1** [Beispiel]{.fiktiv}
+
+- **Sprint Goal:** *Ein Gast kann am Tablet bestellen, ohne auf den Service zu warten.*
+- **Ausgewählt:** US-001, US-002a, dazu die Discovery-Aufgabe D-01 für den nächsten Sprint.
+- **Definition of Ready erfüllt:** Wireframes für Speisekarte und Warenkorb wurden in Sprint 0 als Papierprototyp mit fünf Personen getestet (siehe [Wireframes und Prototypen](09-wireframes-prototypen.qmd)).
+- **Parallel in Discovery:** Wireframes der Küchenansicht (US-006, US-007) und Beobachtung D-01, damit diese Stories zum Sprint Planning von Sprint 2 bereit sind.
+:::
+
+## Übung {.unnumbered}
+
+::: {.uebung}
+**Vom Sprint 0 zum ersten Sprint**
+
+**Ziel:** Aus euren Personas und Journey Maps ein geordnetes Product Backlog erstellen und den ersten Sprint planen.
+
+**Ablauf (Gruppen zu dritt, zwei Unterrichtseinheiten):**
+
+1. Formuliert aus eurer Vision und euren Insights ein **Product Goal** aus Sicht der Nutzenden.
+2. Legt die Phasen eurer Journey Map als Rückgrat auf einen Tisch oder in FigJam. Schreibt unter jede Phase alle Stories, die Pain Points beheben oder Chancen nutzen, eine pro Haftnotiz. Sortiert nach Wichtigkeit und zieht die Linie für Release 1.
+3. Schreibt fünf Stories aus Release 1 vollständig aus: Story-Satz, Persona, Quelle, mindestens zwei Akzeptanzkriterien im Format Given – When – Then und mindestens ein prüfbares UX-Kriterium. Prüft jede Story mit INVEST; schneidet zu große Stories senkrecht.
+4. Sammelt alle Annahmen, die ihr noch nicht geprüft habt, als Discovery-Einträge.
+5. Ordnet alles zu einem Product Backlog. Schreibt zu den ersten fünf Einträgen einen Satz, warum sie oben stehen.
+6. Plant Sprint 1: Sprint Goal, ausgewählte Stories, und was Discovery parallel für Sprint 2 vorbereitet.
+
+**Werkzeug:** Haftnotizen oder FigJam (Vorlage „Story Map“); für das Backlog GitHub Projects oder eine Tabelle.
+
+**Ergebnis:** Product Goal, Foto oder Export der Story Map, geordnetes Backlog mit Begründungen, fünf ausgeschriebene Stories, Plan für Sprint 1.
+:::
+
+## Selbstcheck {.unnumbered .selbstcheck}
+
+<details><summary>Was ist eine Story Map, und welchen Vorteil hat sie gegenüber einer flachen Backlog-Liste?</summary>
+
+Eine zweidimensionale Anordnung von User Stories: horizontal die Aktivitäten der Nutzenden in ihrer Reihenfolge (Rückgrat), vertikal die Stories nach Wichtigkeit. Waagrechte Schnitte bilden Releases. Man sieht, ob ein Release den ganzen Weg der Nutzenden abdeckt.
+
+</details>
+
+<details><summary>Woher kommen Rückgrat und Stories einer Story Map in der UX-Arbeit?</summary>
+
+Das Rückgrat kommt aus den Phasen der Journey Maps, die Stories aus Pain Points, Chancen und Insights der Forschung; die Nutzergruppen aus Personas und Service Blueprint.
+
+</details>
+
+<details><summary>Wofür steht INVEST, und warum ist das N für UX-Design wichtig?</summary>
+
+Independent, Negotiable, Valuable, Estimable, Small, Testable. Negotiable bedeutet, dass die Story das Bedürfnis beschreibt und nicht die fertige Lösung; die Gestaltung wird im Refinement entworfen und getestet.
+
+</details>
+
+<details><summary>Welche drei Arten von Einträgen enthält ein Backlog, das UX ernst nimmt?</summary>
+
+User Stories (Delivery), Discovery-Einträge (Forschung, Tests, Prüfung von Annahmen) und UX-Schulden (bekannte Usability-Probleme).
+
+</details>
+
+<details><summary>Warum schneidet man Stories senkrecht und nicht nach Technik?</summary>
+
+Weil jeder Teil für sich einen Nutzen haben muss. Ein Schnitt nach Technik (erst Datenbank, dann Oberfläche) liefert Teile, die allein niemandem helfen.
+
+</details>
+
+<details><summary>Was steuert UX-Design im Backlog Refinement und im Sprint Review bei?</summary>
+
+Im Refinement: getestete Wireframes oder Prototypen und UX-Akzeptanzkriterien, damit die Story die Definition of Ready erfüllt. Im Review: Usability-Tests des Inkrements, deren Ergebnisse als neue Einträge ins Backlog kommen.
+
+</details>
+
+<details><summary>Formuliere „Die Küchenansicht ist gut lesbar“ als prüfbares Akzeptanzkriterium.</summary>
+
+Zum Beispiel: Tischnummern sind mindestens 40 px hoch und aus 3 m Entfernung lesbar, geprüft vor Ort mit dem Küchenpersonal.
+
+</details>

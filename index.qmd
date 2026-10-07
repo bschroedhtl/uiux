@@ -1,0 +1,64 @@
+# Worum es geht {.unnumbered}
+
+Eine Software kann alle Anforderungen erfüllen und trotzdem scheitern: Die Gäste finden den Bestell-Button nicht, die Köchin sieht die neue Bestellung nicht, weil sie gerade Zwiebeln schneidet, und ein älterer Herr gibt auf, weil die Schrift zu klein ist. Ob ein Produkt funktioniert, entscheidet sich an der Stelle, wo Menschen es benutzen.
+
+Dieses Buch zeigt, wie man das herausfindet, bevor programmiert wird. Es führt durch den ganzen Prozess des **nutzerzentrierten Designs**: Nutzende kennenlernen, ihre Bedürfnisse festhalten, Inhalte strukturieren, Oberflächen skizzieren und gestalten und am Ende mit echten Menschen testen.
+
+## Ein Projekt durch das ganze Buch
+
+Alle Methoden werden an **einem** Beispiel gezeigt: einem digitalen Bestellsystem für ein Restaurant. Gäste bestellen über ein Tablet am Tisch, die Küche sieht die Bestellungen auf einem Bildschirm und meldet, wann das Essen fertig ist.
+
+Am Anfang gibt es nur eine grobe Projektidee: keine Anforderungen, keine Entwürfe, keine Zeile Code. Wir gehen den Weg so, wie er in einem Scrum-Projekt laufen sollte: zuerst die Menschen verstehen, die das System benutzen werden, daraus User Stories und ein Product Backlog ableiten, dann Story für Story gestalten und mit Nutzenden testen.
+
+Kapitel für Kapitel entsteht so eine vollständige UX-Dokumentation des Bestellsystems:
+
+| Kapitel | Ergebnis am Bestellsystem |
+| --- | --- |
+| [UX und UI](01-ux-ui.qmd) | Einordnung: Wo steht das Projekt im UX-Prozess? |
+| [UX im Scrum-Prozess](02-ux-scrum.qmd) | Release-Plan mit Discovery und Delivery |
+| [Das Demo-Projekt](03-demo-projekt.qmd) | Projektidee und die Annahmen, die darin stecken |
+| [User Research](04-user-research.qmd) | Forschungsfragen, Interviewleitfaden, Beobachtungsplan |
+| [Personas](05-personas.qmd) | Drei Personas und eine Empathy Map |
+| [User Journey](06-user-journey.qmd) | Journey Maps für Gast und Küche mit Pain Points |
+| [Vom UX-Design zum Product Backlog](07-product-backlog.qmd) | Product Goal, Story Map, User Stories, geordnetes Backlog, Plan für Sprint 1 |
+| [Informationsarchitektur](08-informationsarchitektur.qmd) | Sitemap, Navigationskonzept, Card Sorting, Tree Test |
+| [Wireframes und Prototypen](09-wireframes-prototypen.qmd) | Scribbles, Wireframes und ein klickbarer Prototyp |
+| [Visuelle Gestaltung](10-visuelle-gestaltung.qmd) | Farben, Typografie und Layout für Tablet und Küchenbildschirm |
+| [Designsysteme](11-designsysteme.qmd) | Komponenteninventar und Design Tokens |
+| [Barrierefreiheit](12-barrierefreiheit.qmd) | Barrierefreiheits-Check der eigenen Entwürfe |
+| [Usability-Tests](13-usability-tests.qmd) | Heuristische Evaluation, Testplan, Ergebnisse zurück ins Backlog |
+| [UX-Arbeit mit KI-Werkzeugen](14-ki-werkzeuge.qmd) | Wo KI hilft, wo sie schadet, und wie man sie richtig einsetzt |
+
+## So arbeitet ihr mit dem Buch
+
+Jedes Kapitel folgt demselben Aufbau:
+
+1. **Theorie:** die Begriffe und Methoden, die ihr kennen müsst. Wichtige Definitionen stehen in einem eigenen Kasten, damit ihr sie vor Tests und der Matura schnell wiederfindet.
+2. **Am Bestellsystem:** die Methode, angewendet auf das Demo-Projekt.
+3. **Übung:** eine Aufgabe für eure Gruppe, mit Ziel, Ablauf, Werkzeug und dem Ergebnis, das ihr abgeben sollt.
+4. **Selbstcheck:** Fragen zum Wiederholen. Die Antworten klappt ihr erst auf, wenn ihr selbst eine Antwort gefunden habt.
+
+::: {.merke}
+**So sehen Definitionen aus.** Begriffe in diesen Kästen sind prüfungsrelevant. Sie stehen gesammelt auch im [Glossar](anhang-glossar.qmd).
+:::
+
+::: {.demo}
+So sehen Abschnitte aus, in denen eine Methode auf das Demo-Projekt angewendet wird.
+:::
+
+::: {.uebung}
+So sehen Aufgaben für eure Gruppe aus.
+:::
+
+## Erfundene Daten sind gekennzeichnet
+
+Für das Demo-Projekt wurde keine echte Nutzerforschung gemacht. Personas, Interviewaussagen, Testergebnisse und Zahlen in den Beispielen sind deshalb **erfunden** und mit [Beispiel]{.fiktiv} markiert. Sie zeigen, wie ein Ergebnis aussehen kann. In euren Übungen arbeitet ihr mit echten Antworten von echten Menschen. Das ist der ganze Sinn der Sache.
+
+## Werkzeuge
+
+Für die praktischen Teile braucht ihr zwei Dinge:
+
+- **Papier und Stift** für Scribbles, Card Sorting und erste Entwürfe. Das ist kein Notbehelf, sondern die schnellste Methode, die es gibt.
+- **Figma** für Wireframes, Prototypen und visuelle Gestaltung. Mit einem Education-Konto ist Figma für Schülerinnen und Schüler kostenlos. Für Journey Maps und Gruppenarbeit eignet sich **FigJam**, das Whiteboard von Figma.
+
+Alle weiteren Werkzeuge, die in den Kapiteln vorkommen, findet ihr im Anhang [Werkzeuge](anhang-tools.qmd).

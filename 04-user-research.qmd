@@ -1,0 +1,253 @@
+# User Research {#sec-research}
+
+Wer für andere gestaltet, muss diese anderen kennen. *User Research* (Nutzerforschung) liefert dieses Wissen, und zwar nicht aus Vermutungen, sondern aus Gesprächen, Beobachtungen und Daten.
+
+::: {.merke}
+**User Research** ist die systematische Untersuchung der Nutzenden eines Produkts: ihrer Ziele, Bedürfnisse, Verhaltensweisen, Probleme und ihres Nutzungskontexts. Ziel ist es, Gestaltungsentscheidungen auf Erkenntnisse statt auf Annahmen zu stützen.
+:::
+
+## Der Nutzungskontext
+
+Ein zentraler Begriff der Nutzerforschung ist der Nutzungskontext. Er erklärt, warum dieselbe Software in einer Situation gut funktioniert und in einer anderen nicht.
+
+::: {.merke}
+Der **Nutzungskontext** umfasst nach ISO 9241-11 *die Benutzer, ihre Ziele und Arbeitsaufgaben, die Ausrüstung (Hardware, Software und Materialien) sowie die physische und soziale Umgebung, in der das Produkt genutzt wird.*
+:::
+
+Für das Bestellsystem heißt das zum Beispiel:
+
+| Bestandteil | Gast | Küche |
+| --- | --- | --- |
+| Benutzer | jede Altersgruppe, technikerfahren oder nicht, teils mit Lesebrille | Köchinnen und Köche, Hilfskräfte, oft unter Zeitdruck |
+| Ziele | schnell und richtig bestellen, wissen, wann das Essen kommt | keine Bestellung übersehen, in der richtigen Reihenfolge kochen |
+| Ausrüstung | Tablet am Tisch, geteilt mit der Begleitung | Bildschirm an der Wand oder am Pass, eventuell Touch |
+| Physische Umgebung | gedämpftes Licht, Getränke auf dem Tisch | laut, heiß, nasse oder fettige Hände, Abstand zum Bildschirm |
+| Soziale Umgebung | im Gespräch mit Freunden, Kinder am Tisch | mehrere Personen arbeiten gleichzeitig, Zurufe |
+
+## Qualitativ und quantitativ
+
+Forschungsmethoden lassen sich in zwei Gruppen teilen:
+
+- **Qualitative Methoden** (Interviews, Beobachtung, Fokusgruppen) beantworten die Frage **warum**. Sie liefern tiefe Einblicke von wenigen Personen.
+- **Quantitative Methoden** (Umfragen, Analytics) beantworten die Frage **wie viele** und **wie oft**. Sie liefern Zahlen von vielen Personen, erklären aber nicht, warum etwas passiert.
+
+Gute Forschung kombiniert beide: Analytics zeigt, *dass* viele Gäste den Bestellvorgang abbrechen; ein Interview zeigt, *warum*.
+
+Eine zweite Unterscheidung ist die zwischen dem, was Menschen **sagen**, und dem, was sie **tun**. Beides weicht oft erstaunlich weit voneinander ab. Wer gefragt wird, ob er Bewertungen liest, sagt vielleicht nein und klickt dann doch zuerst auf die Sterne.
+
+## Methoden
+
+### Interviews
+
+Ein Gespräch mit einer einzelnen Person aus der Zielgruppe, meist 30 bis 60 Minuten lang.
+
+- **Vorteile:** tiefes Verständnis; man entdeckt auch „versteckte“ Probleme, nach denen man nicht gefragt hätte.
+- **Nachteile:** zeitaufwendig; nur wenige Personen, daher nicht repräsentativ.
+- **Beispiel:** Lehrende werden gefragt, wie sie ihre Stunden vorbereiten, welche Tools sie verwenden und wo es hakt.
+
+Für UX-Interviews hat sich das **halbstrukturierte Interview** bewährt: Es gibt einen Leitfaden mit Themen und Fragen, aber die interviewende Person darf nachfragen, die Reihenfolge ändern und interessanten Spuren folgen.
+
+### Fokusgruppen
+
+Eine moderierte Gruppendiskussion mit 5 bis 10 Teilnehmenden aus der Zielgruppe zu einem festgelegten Thema. Für belastbare Ergebnisse sollten mindestens zwei Fokusgruppen zum selben Thema stattfinden.
+
+- **Einsatz:** bestehende Produkte verbessern; neue Ideen bewerten, konkretisieren und weiterentwickeln.
+- **Vorteile:** meist sehr kreativ, anregend, fördert neue Ideen.
+- **Nachteile:** Gruppendynamik. Laute Personen dominieren, andere passen sich an. Für Fragen zum eigenen Verhalten weniger geeignet als Einzelinterviews.
+
+### Befragungen und Umfragen
+
+Fragebögen erfassen Meinungen, Einstellungen und Gewohnheiten, mündlich (persönlich, telefonisch) oder schriftlich (online, vor Ort).
+
+- **Vorteile:** viele Antworten, schnelle Auswertung, quantitative Daten.
+- **Nachteile:** keine tiefen Einblicke, Gefahr von Missverständnissen, weil niemand nachfragen kann.
+
+Umfragen zeigen nicht, wie ein Produkt im echten Nutzungskontext verwendet wird. Dafür braucht es Beobachtung.
+
+::: {.merke}
+**Regeln für gute Umfragefragen:** eine Frage pro Satz (keine Doppelfragen wie „Ist die App schnell und schön?“), keine Suggestivfragen („Finden Sie nicht auch, dass …“), konkrete Zeiträume („in den letzten vier Wochen“ statt „normalerweise“), eine Antwortmöglichkeit „weiß nicht“.
+:::
+
+### Beobachtung (Field Studies)
+
+Nutzende werden in ihrem echten Umfeld bei ihrer echten Tätigkeit beobachtet. Man erkennt dabei Dinge, die sie selbst nie erwähnen würden, weil sie ihnen selbstverständlich oder unbewusst sind: der Zettel, der am Bildschirm klebt, der Umweg, den alle nehmen, die Funktion, die niemand benutzt.
+
+Eine besondere Form ist das **Contextual Inquiry**: Man beobachtet die Person bei der Arbeit und stellt dabei Fragen („Was machen Sie gerade? Warum so?“). Die Person ist die Expertin, die forschende Person ist der Lehrling.
+
+### Tagebuchstudien
+
+Nutzende dokumentieren ihr Verhalten über einen längeren Zeitraum, etwa zwei Wochen lang, selbst: wann sie das Produkt benutzen, was gut lief und was nicht. So werden Entwicklungen und Veränderungen sichtbar, etwa wie sich die Benutzung nach der ersten Woche verändert.
+
+### Analytics und Nutzungsdaten
+
+Messbare Daten aus Apps und Websites: Seitenaufrufe, Klickpfade, Abbruchraten, Verweildauer.
+
+- **Vorteil:** objektiv; zeigt reales Verhalten vieler Menschen.
+- **Nachteil:** erklärt nicht, *warum* etwas passiert.
+- **Beispiel:** Viele Nutzende brechen den Buchungsprozess beim dritten Schritt ab. Warum? Das kann nur ein Interview oder ein Usability-Test klären.
+
+### Welche Methode wann?
+
+| Methode | Fragt nach | Teilnehmende | Aufwand | Gut für |
+| --- | --- | --- | --- | --- |
+| Interview | warum, wie | 5–10 | mittel | Motive, Probleme, Abläufe verstehen |
+| Fokusgruppe | Meinungen, Ideen | 5–10 je Gruppe | mittel | Ideen sammeln und bewerten |
+| Umfrage | wie viele, wie oft | 50+ | gering | Annahmen mit Zahlen prüfen |
+| Beobachtung | was tatsächlich passiert | 3–8 | hoch | Nutzungskontext, unbewusstes Verhalten |
+| Tagebuchstudie | Verlauf über Zeit | 5–15 | hoch | Gewohnheiten, Veränderungen |
+| Analytics | was, wie oft | alle | gering (wenn vorhanden) | Problemstellen finden |
+
+## Einen Interviewleitfaden schreiben
+
+Ein **Interviewleitfaden** ist die Vorbereitung für ein halbstrukturiertes Interview. Er wird nicht vorgelesen, sondern dient als Gedächtnisstütze. Ein bewährter Aufbau:
+
+1. **Einstieg und Warm-up:** Vorstellung, Zweck, Einverständnis zur Aufnahme; leichte Fragen zur Person.
+2. **Hauptteil:** offene Fragen zu Erfahrungen und konkretem Verhalten, vom Allgemeinen zum Speziellen.
+3. **Abschluss:** „Gibt es etwas, das wir nicht angesprochen haben, das Ihnen aber wichtig ist?“ Dank.
+
+### Gute Interviewfragen
+
+| Vermeiden | Besser | Warum |
+| --- | --- | --- |
+| Würden Sie per Tablet bestellen? | Erzählen Sie mir vom letzten Mal, als Sie im Restaurant bestellt haben. | Menschen sagen Zukunft schlecht voraus; Erzählungen über echte Erlebnisse sind verlässlicher. |
+| Finden Sie lange Wartezeiten nicht auch nervig? | Wie war das Warten auf das Essen? | Suggestivfragen legen die Antwort in den Mund. |
+| Bestellen Sie oft und schnell? | Wie oft gehen Sie essen? … Wie lange dauert das Bestellen? | Doppelfragen lassen sich nicht sauber beantworten. |
+| Wollen Sie eine Statusanzeige? | Woran merken Sie, dass Ihr Essen bald kommt? | Nicht nach Lösungen fragen, sondern nach Bedürfnissen. |
+
+Hilfreiche Nachfragen sind: *Erzählen Sie mehr darüber. – Warum ist Ihnen das wichtig? – Können Sie ein Beispiel geben? – Wie haben Sie sich dabei gefühlt?* Und: Schweigen aushalten. Wer nach einer Antwort drei Sekunden wartet, bekommt oft den interessantesten Satz.
+
+Zwei Beispiele für Interviewleitfäden aus dem Unterricht: ein Leitfaden der Nielsen Norman Group zum Thema Kochen ([nngroup.com/articles/interview-guide](https://www.nngroup.com/articles/interview-guide/)) und ein Leitfaden zum Thema Computerspiele, der einen ähnlichen Aufbau hat: Einstieg mit Spielertyp, dann Spielauswahl und Motivation, Spielverhalten im Alltag, soziale Aspekte mit Frust- und Flow-Erlebnissen, Abschluss.
+
+### Ethik und Datenschutz
+
+- Teilnehmende werden vorab informiert, worum es geht und was mit den Daten passiert.
+- Aufnahmen nur mit ausdrücklichem Einverständnis; bei Minderjährigen braucht es die Zustimmung der Erziehungsberechtigten.
+- Ergebnisse werden **anonymisiert**: In Berichten steht „Gast 3, 45 Jahre“ statt eines Namens.
+- Teilnehmende können jederzeit abbrechen, ohne Begründung.
+
+## Ergebnisse auswerten: Affinity Mapping
+
+Nach fünf Interviews hat man Dutzende Seiten Notizen. Um daraus Erkenntnisse zu gewinnen, eignet sich das **Affinity Mapping** (Affinitätsdiagramm):
+
+1. Jede einzelne Beobachtung oder Aussage kommt auf eine eigene Haftnotiz. Eine Notiz, ein Gedanke.
+2. Alle Notizen werden an eine Wand oder ein Whiteboard geklebt.
+3. Das Team gruppiert die Notizen schweigend nach Ähnlichkeit, ohne vorher Kategorien festzulegen.
+4. Jede Gruppe bekommt eine Überschrift, die als Aussage formuliert ist: nicht „Wartezeit“, sondern „Gäste wollen wissen, ob ihre Bestellung angekommen ist“.
+5. Aus den Gruppen werden **Erkenntnisse** (*Insights*) abgeleitet.
+
+Ein Insight ist keine bloße Beobachtung („Drei Gäste haben nach dem Kellner gerufen“), sondern deren Deutung: „Gäste vertrauen einer digitalen Bestellung nicht, solange sie keine Rückmeldung von einem Menschen bekommen haben.“
+
+## Am Bestellsystem: der Forschungsplan {#sec-research-demo}
+
+::: {.demo}
+**Forschungsfragen.** Aus den riskantesten Annahmen in der Projektidee (siehe [Das Demo-Projekt](03-demo-projekt.qmd)) entstehen Forschungsfragen:
+
+1. Wie läuft eine Bestellung heute ab, vom Hinsetzen bis zum Essen, und wo gibt es Wartezeiten oder Missverständnisse?
+2. Woher wissen Gäste heute, ob ihre Bestellung angekommen ist und wann das Essen kommt?
+3. Wie organisiert die Küche heute eingehende Bestellungen, und wer bringt fertige Gerichte an den Tisch?
+4. Wie gut kommen ältere Gäste mit Tablets zurecht?
+
+**Methoden.**
+
+| Wer | Methode | Umfang |
+| --- | --- | --- |
+| Gäste | halbstrukturierte Interviews | 6 Personen, gemischtes Alter, je 30 min |
+| Gäste | Beobachtung im Restaurant (zwei Abende) | Bestellvorgang an 10 Tischen |
+| Küche | Contextual Inquiry während des Mittagsservice | 2 Personen, je 2 h |
+| Service | Interview | 2 Personen, je 30 min |
+| Gäste | Online-Umfrage (Ergänzung) | 50+ Antworten |
+:::
+
+::: {.demo}
+**Interviewleitfaden für Gäste** [Beispiel]{.fiktiv}
+
+*Einstieg (5 min)*
+
+- Danke, dass Sie sich Zeit nehmen. Wir wollen verstehen, wie Menschen im Restaurant bestellen. Es gibt keine richtigen oder falschen Antworten. Darf ich das Gespräch aufnehmen?
+- Wie oft gehen Sie ungefähr essen? Mit wem?
+
+*Bestellen heute (10 min)*
+
+- Erzählen Sie mir vom letzten Restaurantbesuch: vom Hinsetzen bis zum Essen.
+  - Wie haben Sie entschieden, was Sie bestellen?
+  - Gab es einen Moment, in dem Sie gewartet oder sich geärgert haben? Was genau ist passiert?
+- Woran haben Sie gemerkt, dass Ihre Bestellung angekommen ist?
+
+*Digitales Bestellen (10 min)*
+
+- Haben Sie schon einmal per Tablet, QR-Code oder App im Restaurant bestellt? Erzählen Sie davon.
+  - Was war gut, was hat gestört?
+  - Wie haben Sie sich gefühlt, nachdem Sie auf „Bestellen“ getippt hatten?
+- Wenn Sie mit mehreren Personen am Tisch sitzen: Wer bestellt?
+
+*Abschluss (5 min)*
+
+- Wenn Sie eine Sache beim Bestellen im Restaurant ändern könnten, was wäre das?
+- Gibt es noch etwas, das Ihnen wichtig ist?
+:::
+
+::: {.demo}
+**Ausgewählte Erkenntnisse** [Beispiel]{.fiktiv}
+
+Nach Interviews und Beobachtung ergab das Affinity Mapping unter anderem diese Gruppen:
+
+- **„Ich will sicher sein, dass die Küche meine Bestellung hat.“** Vier von sechs Gästen haben nach einer digitalen Bestellung trotzdem beim Kellner nachgefragt.
+- **„Wir bestellen nacheinander, nicht gemeinsam.“** Gruppen reichen das Tablet herum; Getränke werden zuerst und oft mehrmals nachbestellt.
+- **„Ich weiß meine Tischnummer nicht.“** Kein beobachteter Gast hat auf die Tischnummer geachtet. Die Nummer klebt unter dem Tisch.
+- **„Am Pass schreit jemand die Nummer.“** In der Küche entscheidet nicht der Bildschirm, sondern die Person am Pass, was als Nächstes gekocht wird; sie braucht den Überblick über *alle* Tische, nicht über einzelne Bestellungen.
+- **„Fertig heißt noch nicht serviert.“** Fertige Teller warten oft mehrere Minuten, bis das Servicepersonal sie abholt. Der Status *Fertig* sagt dem Gast also nicht, dass das Essen gleich am Tisch ist.
+
+Jede dieser Erkenntnisse bestätigt oder widerlegt eine Annahme aus der Projektidee. Im Kapitel [Vom UX-Design zum Product Backlog](07-product-backlog.qmd) werden daraus User Stories.
+:::
+
+## Übung {.unnumbered}
+
+::: {.uebung}
+**Interviews führen und auswerten**
+
+**Ziel:** Echte Erkenntnisse über Gäste sammeln.
+
+**Ablauf (Gruppen zu dritt, zwei Unterrichtseinheiten plus Hausübung):**
+
+1. Formuliert aus euren drei riskantesten Annahmen (Übung im letzten Kapitel) zwei bis drei Forschungsfragen.
+2. Schreibt einen Interviewleitfaden mit Einstieg, Hauptteil (6 bis 10 offene Fragen) und Abschluss. Prüft jede Frage an der Tabelle „Gute Interviewfragen“.
+3. Jede Person führt ein Interview mit jemandem außerhalb der Klasse (Familie, Bekannte), 20 bis 30 Minuten. Eine Person fragt, eine schreibt mit, wenn möglich.
+4. Übertragt alle Beobachtungen auf Haftnotizen, eine Aussage pro Notiz, und macht gemeinsam ein Affinity Mapping.
+5. Formuliert drei bis fünf Insights als Aussagesätze.
+
+**Werkzeug:** Papier für den Leitfaden; Haftnotizen oder FigJam für das Affinity Mapping (FigJam hat eine Vorlage „Affinity Diagram“).
+
+**Ergebnis:** Interviewleitfaden, anonymisierte Interviewnotizen, Foto oder Export des Affinity Mappings, Liste der Insights.
+:::
+
+## Selbstcheck {.unnumbered .selbstcheck}
+
+<details><summary>Was gehört nach ISO 9241-11 zum Nutzungskontext?</summary>
+
+Die Benutzer, ihre Ziele und Arbeitsaufgaben, die Ausrüstung (Hardware, Software, Materialien) sowie die physische und soziale Umgebung, in der das Produkt genutzt wird.
+
+</details>
+
+<details><summary>Wann setzt man qualitative, wann quantitative Methoden ein?</summary>
+
+Qualitative Methoden (Interviews, Beobachtung) beantworten das Warum und liefern tiefe Einblicke von wenigen Personen, etwa am Projektbeginn. Quantitative Methoden (Umfragen, Analytics) beantworten wie viele und wie oft, etwa um eine Annahme an vielen Personen zu prüfen. Am besten kombiniert man beide.
+
+</details>
+
+<details><summary>Nenne je einen Vor- und Nachteil von Interviews, Fokusgruppen, Umfragen und Analytics.</summary>
+
+Interviews: tiefes Verständnis / zeitaufwendig, wenige Personen. Fokusgruppen: kreativ, viele Ideen / Gruppendynamik verzerrt Meinungen. Umfragen: viele Antworten, schnell auswertbar / keine tiefen Einblicke, Missverständnisse. Analytics: objektiv, reales Verhalten / erklärt nicht, warum.
+
+</details>
+
+<details><summary>Warum ist „Würden Sie eine Statusanzeige benutzen?“ eine schlechte Interviewfrage?</summary>
+
+Sie fragt nach einer Lösung statt nach einem Bedürfnis, und sie fragt nach zukünftigem Verhalten, das Menschen schlecht vorhersagen. Besser: „Woran merken Sie heute, dass Ihr Essen bald kommt?“
+
+</details>
+
+<details><summary>Was ist der Unterschied zwischen einer Beobachtung und einem Insight?</summary>
+
+Eine Beobachtung beschreibt, was passiert ist („Vier Gäste haben nachgefragt“). Ein Insight deutet die Beobachtung und erklärt ein Bedürfnis oder Motiv dahinter („Gäste vertrauen der digitalen Bestellung nicht, solange sie keine Rückmeldung bekommen“).
+
+</details>

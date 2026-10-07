@@ -1,0 +1,69 @@
+project:
+  type: book
+  output-dir: _book
+  resources:
+    - fonts/
+    - specimen.js
+
+lang: de
+
+book:
+  title: "UI/UX Design"
+  subtitle: "Ein Workshop am Beispiel eines digitalen Restaurantbestellsystems · SYP, 3. Jahrgang, HTL Leonding"
+  date: last-modified
+  date-format: "MMMM YYYY"
+  search: true
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - part: "Grundlagen"
+      chapters:
+        - 01-ux-ui.qmd
+        - 02-ux-scrum.qmd
+        - 03-demo-projekt.qmd
+    - part: "Verstehen"
+      chapters:
+        - 04-user-research.qmd
+        - 05-personas.qmd
+        - 06-user-journey.qmd
+    - part: "Planen"
+      chapters:
+        - 07-product-backlog.qmd
+    - part: "Gestalten"
+      chapters:
+        - 08-informationsarchitektur.qmd
+        - 09-wireframes-prototypen.qmd
+        - 10-visuelle-gestaltung.qmd
+        - 11-designsysteme.qmd
+        - 12-barrierefreiheit.qmd
+    - part: "Prüfen"
+      chapters:
+        - 13-usability-tests.qmd
+    - part: "Mit KI arbeiten"
+      chapters:
+        - 14-ki-werkzeuge.qmd
+  appendices:
+    - anhang-glossar.qmd
+    - anhang-tools.qmd
+
+format:
+  html:
+    theme: [cosmo, specimen.scss]
+    css: fonts.css
+    include-after-body:
+      text: <script src="specimen.js"></script>
+    mermaid:
+      theme: neutral
+    grid:
+      sidebar-width: 280px
+      body-width: 760px
+      margin-width: 240px
+    toc: true
+    toc-depth: 3
+    toc-title: "Auf dieser Seite"
+    number-sections: true
+    number-depth: 2
+    crossref:
+      chapters: true
+    code-copy: false
+    link-external-newwindow: true

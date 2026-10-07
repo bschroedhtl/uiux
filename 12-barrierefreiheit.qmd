@@ -1,0 +1,165 @@
+# Barrierefreiheit {#sec-barrierefreiheit}
+
+Etwa jeder sechste Mensch weltweit lebt mit einer erheblichen Behinderung, schätzt die Weltgesundheitsorganisation. Dazu kommen alle, die vorübergehend oder in einer bestimmten Situation eingeschränkt sind. Barrierefreiheit ist deshalb kein Sonderwunsch für eine kleine Gruppe, sondern Qualitätsmerkmal für alle.
+
+::: {.merke}
+**Barrierefreiheit** (*Accessibility*, kurz *a11y*) bedeutet, dass ein Produkt für alle Menschen nutzbar ist, unabhängig von körperlichen oder kognitiven Fähigkeiten, ohne fremde Hilfe und ohne besondere Erschwernis.
+:::
+
+## Für wen?
+
+| Einschränkung | Beispiele | Was hilft |
+| --- | --- | --- |
+| **Sehen** | Blindheit, Sehschwäche, Farbsehschwäche | Screenreader-taugliche Struktur, Alternativtexte, hoher Kontrast, vergrößerbare Schrift, Farbe nie allein |
+| **Hören** | Gehörlosigkeit, Schwerhörigkeit | Untertitel, Signale nicht nur als Ton |
+| **Motorik** | Zittern, Lähmung, fehlende Hand | Tastaturbedienung, große Klickziele, keine Zeitlimits |
+| **Kognition** | Lernschwierigkeiten, Konzentrationsprobleme, Demenz | einfache Sprache, klare Abläufe, Fehler verzeihen |
+
+Microsoft beschreibt in seinem *Inclusive Design Toolkit* drei Arten von Einschränkungen, die zeigen, dass jede Person betroffen sein kann:
+
+| | permanent | vorübergehend | situativ |
+| --- | --- | --- | --- |
+| Berührung | ein Arm | gebrochener Arm | Kind auf dem Arm |
+| Sehen | blind | Augenentzündung | grelles Sonnenlicht |
+| Hören | gehörlos | Ohrenentzündung | laute Umgebung |
+
+Wer für den ersten Fall gestaltet, hilft allen dreien. Eine Küche ist voller situativer Einschränkungen: nasse Hände, Lärm, Dampf, keine Zeit.
+
+## WCAG
+
+Der internationale Standard für barrierefreie Webinhalte sind die **Web Content Accessibility Guidelines (WCAG)** des World Wide Web Consortium (W3C). Die aktuelle Version ist **WCAG 2.2** (2023).
+
+::: {.merke}
+Die **WCAG** gliedern Barrierefreiheit in vier Prinzipien (**POUR**):
+
+- **Wahrnehmbar** (*Perceivable*): Informationen müssen mit mindestens einem Sinn wahrnehmbar sein, z. B. Alternativtexte für Bilder, ausreichender Kontrast.
+- **Bedienbar** (*Operable*): Alle Funktionen müssen bedienbar sein, z. B. mit der Tastatur, ohne Zeitdruck.
+- **Verständlich** (*Understandable*): Inhalte und Bedienung müssen verständlich sein, z. B. klare Sprache, vorhersehbares Verhalten, hilfreiche Fehlermeldungen.
+- **Robust** (*Robust*): Inhalte müssen mit verschiedenen Technologien funktionieren, auch mit assistiven wie Screenreadern.
+
+Jedes Kriterium hat eine Konformitätsstufe: **A** (Mindestanforderung), **AA** (der übliche gesetzliche Standard) und **AAA** (höchste Stufe).
+:::
+
+### Rechtlicher Rahmen
+
+- Öffentliche Stellen in der EU müssen ihre Websites und Apps barrierefrei gestalten (EU-Richtlinie 2016/2102, in Österreich umgesetzt im **Web-Zugänglichkeits-Gesetz**). Maßstab ist die europäische Norm EN 301 549, die auf WCAG Stufe AA verweist.
+- Seit **28. Juni 2025** gilt der **European Accessibility Act**, in Österreich als **Barrierefreiheitsgesetz (BaFG)**. Er verpflichtet auch private Unternehmen, bestimmte Produkte und Dienstleistungen barrierefrei anzubieten, etwa Online-Shops, Bankdienstleistungen, E-Books und bestimmte Selbstbedienungsterminals.
+
+Ob ein konkretes Produkt unter ein Gesetz fällt, muss im Einzelfall geprüft werden. Unabhängig davon gilt: Was barrierefrei ist, ist für alle besser benutzbar.
+
+## Die wichtigsten Regeln für die Praxis
+
+| Regel | WCAG | Prüfen mit |
+| --- | --- | --- |
+| Textkontrast mindestens **4,5 : 1**, große Schrift (ab 24 px oder 18,7 px fett) **3 : 1** | 1.4.3 (AA) | Kontrastprüfer |
+| Kontrast von Bedienelementen und Grafiken mindestens **3 : 1** | 1.4.11 (AA) | Kontrastprüfer |
+| Information nie nur durch **Farbe** | 1.4.1 (A) | Bildschirm in Graustufen ansehen |
+| Jedes Bild hat einen **Alternativtext**, dekorative Bilder einen leeren | 1.1.1 (A) | Screenreader, WAVE |
+| Alles mit der **Tastatur** bedienbar, sichtbarer **Fokus** | 2.1.1 (A), 2.4.7 (AA) | Maus weglegen, mit Tab durchgehen |
+| Klickziele mindestens **24 × 24 px** (besser 44 × 44) | 2.5.8 (AA) | Messen im Design |
+| Jedes Formularfeld hat ein sichtbares **Label** | 3.3.2 (A) | Ansehen, Screenreader |
+| **Fehlermeldungen** nennen das Problem und die Lösung | 3.3.1 (A), 3.3.3 (AA) | Formular falsch ausfüllen |
+| Text auf **200 %** vergrößerbar, ohne dass etwas verloren geht | 1.4.4 (AA) | Browser-Zoom |
+| **Sprache** der Seite und fremdsprachiger Teile ist angegeben | 3.1.1 (A), 3.1.2 (AA) | Quelltext: `lang` |
+| Jedes Bedienelement hat einen zugänglichen **Namen** | 4.1.2 (A) | Screenreader |
+| **Statusmeldungen** werden angesagt, ohne den Fokus zu verschieben | 4.1.3 (AA) | Screenreader |
+
+### Semantisches HTML zuerst
+
+Die meisten Barrieren entstehen in der Programmierung und lassen sich mit richtigem HTML vermeiden: ein `<button>` statt eines anklickbaren `<div>`, ein `<label>` für jedes Eingabefeld, Überschriften `<h1>` bis `<h6>` in der richtigen Reihenfolge, Listen als `<ul>`. Erst wenn HTML nicht ausreicht, kommen **ARIA**-Attribute dazu. Für sie gilt die Faustregel: Kein ARIA ist besser als falsches ARIA.
+
+```html
+<!-- Schlecht: Screenreader sagt nur "Schaltfläche, mal" -->
+<button>&times;</button>
+
+<!-- Gut: sichtbares Symbol, zugänglicher Name -->
+<button aria-label="Frittatensuppe aus dem Warenkorb entfernen">&times;</button>
+```
+
+## Werkzeuge
+
+| Werkzeug | Wofür |
+| --- | --- |
+| **Lighthouse** (in Chrome DevTools) | automatischer Bericht mit Barrierefreiheits-Punktzahl |
+| **axe DevTools** (Browser-Erweiterung) | findet automatisch prüfbare WCAG-Fehler mit Erklärung |
+| **WAVE** (wave.webaim.org) | zeigt Fehler direkt auf der Seite an |
+| **WebAIM Contrast Checker** | Kontrastverhältnis zweier Farben |
+| **NVDA** (Windows, kostenlos), **VoiceOver** (Apple), **TalkBack** (Android) | Screenreader zum Selbsttesten |
+| Figma-Plugins wie **Stark** oder **Contrast** | Kontrast und Farbsehschwächen schon im Entwurf prüfen |
+
+Automatische Werkzeuge finden nur einen Teil der Probleme, Schätzungen sprechen von einem Drittel bis der Hälfte. Ob ein Alternativtext sinnvoll ist oder ein Ablauf verständlich, kann nur ein Mensch beurteilen.
+
+## Am Bestellsystem: ein Barrierefreiheits-Check {#sec-barrierefreiheit-demo}
+
+::: {.demo}
+Barrierefreiheit wird am billigsten geprüft, **bevor** programmiert wird. Das Team prüft deshalb seine Mockups aus Figma mit dem Plugin Stark und einer Checkliste nach WCAG. Ergebnis [Beispiel]{.fiktiv}:
+
+| Problem im Entwurf | Wo | WCAG | Lösung |
+| --- | --- | --- | --- |
+| Button „×“ zum Entfernen hat nur ein Symbol; ein Screenreader hätte nichts vorzulesen. | Warenkorb | 4.1.2 | Anmerkung im Entwurf: zugänglicher Name „[Gericht] entfernen“, besser sichtbarer Text „Entfernen“ |
+| Mengenwähler − und + sind nur 32 × 32 px groß. | Warenkorb | 2.5.8 | auf 44 × 44 px vergrößern |
+| In einem frühen Mockup sind ausverkaufte Gerichte nur blasser dargestellt; der ganze Text verliert Kontrast. | Speisekarte | 1.4.3 | volle Deckkraft, stattdessen Text „Heute aus“ |
+| Preis in hellgrau auf weiß hat nur 3,2 : 1 Kontrast. | Speisekarte | 1.4.3 | dunkleres Grau mit mindestens 4,5 : 1 |
+| In der Küchenansicht unterscheiden sich die Status nur durch die Farbe des Etiketts. | Küchenansicht | 1.4.1 | Statuswort immer mitschreiben, Spalten mit Überschrift |
+| Die Bestätigung nach dem Absenden erscheint nur kurz als Einblendung. | Bestellen | 4.1.3, 2.2.1 | Meldung bleibt stehen, bis der Gast weitermacht; als Statusmeldung für Screenreader markieren |
+| Fehlerhinweise stehen oben auf dem Bildschirm, nicht beim betroffenen Gericht. | Warenkorb | 3.3.1 | Hinweis direkt beim Gericht, mit Lösung („Entfernen“ oder „Ersetzen“) |
+
+Diese Punkte werden zu **Akzeptanzkriterien** der jeweiligen User Story, zum Beispiel für US-002:
+
+```gherkin
+Given ein Gast benutzt einen Screenreader
+When  er eine Position aus dem Warenkorb entfernen will
+Then  sagt der Screenreader "Frittatensuppe entfernen, Schaltfläche"
+```
+:::
+
+## Übung {.unnumbered}
+
+::: {.uebung}
+**Barrierefreiheit selbst erleben und prüfen**
+
+**Ziel:** Barrieren erkennen, die man ohne Selbstversuch nicht bemerkt.
+
+**Ablauf (Paare, eine Unterrichtseinheit):**
+
+1. **Tastatur:** Legt die Maus weg und versucht, auf einer Website eurer Wahl etwas zu bestellen oder ein Formular abzuschicken. Wo verliert ihr den Fokus? Wo kommt ihr nicht weiter?
+2. **Screenreader:** Startet NVDA (Windows) oder VoiceOver (Mac: Cmd + F5) und lasst euch dieselbe Seite vorlesen. Schließt dabei die Augen.
+3. **Automatisch:** Prüft die Seite mit Lighthouse und axe DevTools. Welche Probleme finden die Werkzeuge, welche habt ihr selbst gefunden, welche nur die Werkzeuge?
+4. **Eigener Entwurf:** Prüft alle Farbpaare eures Mockups mit dem WebAIM Contrast Checker und seht euch das Mockup mit dem Figma-Plugin Stark als Rot-Grün-Sehschwäche an.
+
+**Werkzeug:** NVDA oder VoiceOver, Chrome DevTools (Lighthouse), axe DevTools, WebAIM Contrast Checker, Figma-Plugin Stark.
+
+**Ergebnis:** Eine Tabelle wie im Beispiel oben mit mindestens fünf Problemen, WCAG-Kriterium und Lösung; korrigierte Farbwerte für euer Mockup.
+:::
+
+## Selbstcheck {.unnumbered .selbstcheck}
+
+<details><summary>Wofür steht POUR in den WCAG?</summary>
+
+Perceivable (wahrnehmbar), Operable (bedienbar), Understandable (verständlich), Robust. Die vier Prinzipien, nach denen die WCAG gegliedert sind.
+
+</details>
+
+<details><summary>Welche Konformitätsstufen gibt es, und welche ist der übliche gesetzliche Standard?</summary>
+
+A, AA und AAA. Gesetzlich gefordert ist in der Regel AA.
+
+</details>
+
+<details><summary>Welches Kontrastverhältnis brauchen normaler Text und große Schrift nach WCAG AA?</summary>
+
+Normaler Text mindestens 4,5 : 1, große Schrift (ab 24 px oder 18,7 px fett) mindestens 3 : 1.
+
+</details>
+
+<details><summary>Was ist eine situative Einschränkung? Nenne ein Beispiel aus dem Bestellsystem.</summary>
+
+Eine Einschränkung, die durch die Situation entsteht, nicht durch die Person. Beispiel: Der Koch hat nasse Hände und kann den Touchscreen nicht gut bedienen, oder es ist so laut, dass er einen Signalton nicht hört.
+
+</details>
+
+<details><summary>Warum reichen automatische Prüfwerkzeuge nicht aus?</summary>
+
+Sie finden nur technisch prüfbare Fehler, etwa fehlende Alternativtexte oder zu geringen Kontrast, schätzungsweise ein Drittel bis die Hälfte aller Probleme. Ob ein Text verständlich, ein Alternativtext sinnvoll oder ein Ablauf logisch ist, muss ein Mensch beurteilen.
+
+</details>

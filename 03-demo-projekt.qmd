@@ -1,0 +1,86 @@
+# Das Demo-Projekt {#sec-demo}
+
+Bevor wir mit den Methoden beginnen, lernen wir das Projekt kennen, an dem wir sie ausprobieren: ein digitales Bestellsystem für ein Restaurant. Es gibt bisher nur eine grobe Projektidee. Es gibt noch keine Anforderungsliste, keine User Stories, keinen Entwurf und keine Zeile Code. Das ist der beste Zeitpunkt, um mit UX-Design zu beginnen.
+
+## Die Projektidee
+
+> Ein Restaurant möchte seinen Gästen ermöglichen, Bestellungen digital über ein Tablet am Tisch aufzugeben. Die Küche soll eingehende Bestellungen sofort sehen und den Bearbeitungsstatus aktualisieren können, damit Gäste jederzeit wissen, wann ihr Essen kommt.
+>
+> — Vision des Projekts
+
+Die Restaurantleitung hat außerdem gesagt, was **nicht** dazugehören soll: Bezahlung und Rechnung, Benutzeranmeldung, Tischreservierungen und Lagerverwaltung.
+
+Mehr wissen wir nicht. Und das ist gut so: Wer jetzt sofort eine Liste von Funktionen aufschreibt, schreibt auf, was er **vermutet**. In diesem Buch schreiben wir erst auf, was wir **wissen**, nachdem wir mit den Menschen gesprochen haben, die das System benutzen werden.
+
+## Was in der Idee steckt
+
+Schon die zwei Sätze der Vision enthalten Annahmen. Einige Beispiele:
+
+| Satz in der Vision | Darin steckende Annahme |
+| --- | --- |
+| „Gäste bestellen über ein Tablet am Tisch“ | Gäste wollen überhaupt selbst bestellen, statt mit einem Menschen zu sprechen. Alle können ein Tablet bedienen. |
+| „die Küche soll Bestellungen sofort sehen“ | In der Küche gibt es einen Platz für einen Bildschirm, und jemand hat Zeit, darauf zu schauen. |
+| „den Bearbeitungsstatus aktualisieren“ | Das Küchenpersonal hat die Hände frei, um etwas anzutippen. |
+| „damit Gäste wissen, wann ihr Essen kommt“ | Wenn die Küche „fertig“ meldet, kommt das Essen auch gleich. |
+
+Keine dieser Annahmen ist offensichtlich falsch. Aber jede könnte falsch sein, und dann würde das Team etwas bauen, das niemand benutzt.
+
+## Was wir noch nicht wissen
+
+Lest die Vision noch einmal mit der Frage: *Was wissen wir über die Menschen, die das System benutzen?* Die Antwort: fast nichts. Offen ist zum Beispiel:
+
+- wie alt die Gäste sind, ob sie mit Tablets vertraut sind, ob sie eine Lesebrille brauchen,
+- ob sie allein, zu zweit oder mit einer Gruppe von zwölf Personen kommen,
+- ob sie in Eile sind (Mittagspause) oder einen langen Abend verbringen,
+- wie laut und hektisch es in der Küche ist, wo ein Bildschirm hängen könnte und ob die Köchin ihn mit sauberen Händen berühren kann,
+- wer das fertige Essen eigentlich an den Tisch bringt.
+
+Die letzte Frage ist besonders interessant: In der Vision kommen nur *Gäste* und *Küche* vor. Wer serviert? In den meisten Restaurants ist das eine dritte Gruppe, das **Servicepersonal**, das in der Idee gar nicht erwähnt wird.
+
+## Unser Weg durch das Projekt
+
+Wir gehen den Weg so, wie es im [Scrum-Prozess](02-ux-scrum.qmd) sein sollte:
+
+1. **Verstehen (Sprint 0):** Wir sprechen mit Gästen, Küche und Service, beobachten den Betrieb im Restaurant, erstellen Personas und Journey Maps.
+2. **Planen:** Aus den Erkenntnissen entstehen eine Story Map, User Stories und das erste Product Backlog.
+3. **Gestalten:** Story für Story entstehen Struktur, Wireframes und Gestaltung, jeweils kurz bevor das Team sie umsetzt.
+4. **Prüfen:** Prototypen und fertige Inkremente werden mit Nutzenden getestet; was wir dabei lernen, wandert zurück ins Backlog.
+
+## Übung {.unnumbered}
+
+::: {.uebung}
+**Annahmen aufspüren**
+
+**Ziel:** Erkennen, welche Annahmen über Nutzende in einer Projektidee stecken.
+
+**Ablauf (Gruppen zu dritt, 25 Minuten):**
+
+1. Lest die Vision in diesem Kapitel.
+2. Schreibt jede Annahme über Gäste, Küchenpersonal oder die Umgebung auf einen eigenen Zettel. Beispiel: „Gäste wollen lieber selbst bestellen als mit dem Kellner reden.“
+3. Markiert jede Annahme: **sicher** (wir wissen es), **wahrscheinlich** oder **unbekannt**.
+4. Wählt die drei unbekannten Annahmen, die das Projekt am stärksten gefährden würden, wenn sie falsch sind.
+
+**Werkzeug:** Haftnotizen oder FigJam.
+
+**Ergebnis:** Eine Liste eurer drei riskantesten Annahmen. Ihr braucht sie im nächsten Kapitel für eure Forschungsfragen.
+:::
+
+## Selbstcheck {.unnumbered .selbstcheck}
+
+<details><summary>Warum schreibt man aus einer Projektidee nicht sofort eine Liste von Funktionen?</summary>
+
+Weil eine solche Liste nur Vermutungen enthält. Ohne Gespräche und Beobachtungen weiß niemand, ob Gäste, Küche und Service genau diese Funktionen brauchen. Erst die Nutzerforschung macht aus Vermutungen überprüfte Anforderungen.
+
+</details>
+
+<details><summary>Nenne zwei Annahmen, die in der Vision des Bestellsystems stecken.</summary>
+
+Zum Beispiel: Gäste wollen selbst am Tablet bestellen. Das Küchenpersonal hat die Hände frei, um den Status anzutippen. Wenn die Küche „fertig“ meldet, kommt das Essen auch gleich an den Tisch.
+
+</details>
+
+<details><summary>Welche Nutzergruppe fehlt in der Vision?</summary>
+
+Das Servicepersonal, das in den meisten Restaurants das fertige Essen an den Tisch bringt und deshalb wissen muss, welche Bestellung fertig ist und für welchen Tisch.
+
+</details>

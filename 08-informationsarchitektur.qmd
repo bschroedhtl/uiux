@@ -1,0 +1,191 @@
+# Informationsarchitektur {#sec-ia}
+
+Bevor man Bildschirme zeichnet, muss klar sein, **was** auf welche Seite kommt und **wie** man von einer Seite zur nächsten gelangt. Diese Struktur heißt Informationsarchitektur. Sie ist das Skelett eines Produkts: unsichtbar, aber alles hängt daran.
+
+::: {.merke}
+**Informationsarchitektur (IA)** ist die Strukturierung, Benennung und Verknüpfung von Inhalten, sodass Nutzende finden, was sie suchen, und verstehen, wo sie sich befinden. Sie umfasst vier Bereiche: **Organisation** (wie Inhalte gruppiert werden), **Beschriftung** (wie Gruppen und Links heißen), **Navigation** (wie man sich bewegt) und **Suche**.
+:::
+
+Eine gute IA erkennt man daran, dass man sie nicht bemerkt. Eine schlechte erkennt man an Sätzen wie: „Wo war das nochmal?“ oder „Ich hätte das unter *Service* gesucht, nicht unter *Über uns*.“
+
+## Sitemaps
+
+::: {.merke}
+Eine **Sitemap** stellt die Seiten- oder Bildschirmstruktur einer Website oder App als Baumdiagramm dar. Sie zeigt, wie Inhalte angeordnet und miteinander verknüpft sind.
+:::
+
+Der Vorteil einer Sitemap: Man erkennt sofort, ob Inhalte logisch gruppiert sind, ob es Doppelungen gibt und wie tief die Struktur ist. Eine Faustregel: Wichtige Inhalte sollten mit wenigen Schritten erreichbar sein. Zu tiefe Strukturen (viele Ebenen mit wenigen Einträgen) sind ebenso schlecht wie zu flache (eine Ebene mit hundert Einträgen).
+
+## Navigationskonzepte
+
+Ein Navigationskonzept beschreibt, wie sich Nutzende durch die Struktur bewegen können. Man unterscheidet fünf Arten:
+
+| Art | Beschreibung | Beispiele | Ziel |
+| --- | --- | --- | --- |
+| **Globale Navigation** | zentrales Hauptmenü, auf allen Seiten sichtbar | Top-Bar einer Website, Tab-Bar unten in Apps | Nutzende wissen immer, wo sie sind und wie sie zurückkommen. |
+| **Lokale Navigation** | Untermenü innerhalb eines Bereichs | im Online-Shop unter *Schuhe*: *Sneaker*, *Sandalen*, *Stiefel* | Orientierung innerhalb eines Bereichs |
+| **Kontextuelle Navigation** | Links innerhalb von Inhalten | „Ähnliche Produkte“, „Weiterführende Artikel“ | Nutzende entdecken Inhalte, ohne aktiv zu suchen. |
+| **Breadcrumbs** | zeigt den Pfad zur aktuellen Seite | Startseite › Shop › Schuhe › Sneaker | aktueller Standort in der Hierarchie, schneller Sprung nach oben |
+| **Suchnavigation** | Suchfeld, oft mit Filtern | Amazon, Netflix | bei großen Informationsmengen oft das wichtigste Element |
+
+### Navigation auf Mobilgeräten
+
+Auf kleinen Bildschirmen gibt es zwei verbreitete Muster für die globale Navigation:
+
+- **Tab-Bar** am unteren Rand mit drei bis fünf Einträgen: immer sichtbar, mit dem Daumen gut erreichbar. Geeignet für die wichtigsten Bereiche.
+- **Hamburger-Menü** (☰): spart Platz, versteckt aber die Navigation. Studien zeigen, dass versteckte Navigation seltener benutzt wird. Für die wichtigsten Wege ist sie deshalb die schlechtere Wahl.
+
+## Card Sorting
+
+Wie würden Nutzende Inhalte gruppieren und benennen? Statt zu raten, kann man sie fragen, und zwar mit Karten.
+
+::: {.merke}
+**Card Sorting** ist eine Methode, bei der Nutzende Karten mit Inhaltsbegriffen in Gruppen sortieren, diese benennen und so ordnen, wie es für sie sinnvoll ist. Die Ergebnisse helfen, Menüstrukturen und Sitemaps aus Nutzersicht zu gestalten und Begriffe zu finden, die die Zielgruppe versteht.
+:::
+
+### Varianten
+
+| Variante | Ablauf | Einsatz |
+| --- | --- | --- |
+| **Offenes Card Sorting** | Teilnehmende bilden eigene Gruppen und benennen sie selbst; sie dürfen Karten umbenennen. | Konzeptionsphase: Es gibt noch keine Struktur. |
+| **Geschlossenes Card Sorting** | Die Oberkategorien sind vorgegeben; Teilnehmende ordnen nur die Karten zu. | Neue Inhalte in eine bestehende Struktur einordnen. |
+| **Hybrides Card Sorting** | Kategorien sind vorgegeben, Teilnehmende dürfen aber neue hinzufügen. | Bestehende Struktur erweitern. |
+
+Card Sorting kann **offline** mit echten Karten stattfinden, meist moderiert, damit man nachfragen kann, warum jemand eine Karte so einordnet. Oder **online** mit einem Werkzeug, das viele Teilnehmende gleichzeitig erreicht und die Ergebnisse automatisch auswertet.
+
+### Ablauf eines Card Sortings
+
+1. **Karten vorbereiten:** 30 bis 60 Inhalte, je einer pro Karte, in neutraler Sprache. Begriffe vermeiden, die die Gruppierung schon vorgeben.
+2. **Teilnehmende einladen:** für offenes Card Sorting etwa 15 Personen, damit sich Muster zeigen.
+3. **Sortieren lassen:** Teilnehmende denken laut nach; die moderierende Person schreibt mit, erklärt aber nichts.
+4. **Auswerten:** Welche Karten landen oft in derselben Gruppe? Online-Werkzeuge zeigen das als **Ähnlichkeitsmatrix**: je dunkler das Feld, desto öfter wurden zwei Karten zusammengelegt.
+
+### Was man daraus lernt
+
+- **Wording-Probleme:** Begriffe, die Nutzende nicht verstehen oder anders deuten.
+- **Mentale Modelle:** wie Nutzende Inhalte im Kopf ordnen.
+- **Nutzersicht statt Unternehmensstruktur:** Unternehmen ordnen Inhalte oft nach ihren Abteilungen; Nutzende nach ihren Aufgaben.
+- **Bessere Navigation:** Kategorien, die Nutzende intuitiv verstehen.
+
+## Tree Testing
+
+Das Gegenstück zum Card Sorting prüft eine fertige Struktur.
+
+::: {.merke}
+**Tree Testing** (auch *Reverse Card Sorting*) überprüft eine Informationsarchitektur ohne grafische Gestaltung. Teilnehmende bekommen nur die Navigationshierarchie als Textbaum und lösen Aufgaben wie „Wo würdest du Produkt X finden?“. Ziel ist es, Schwachstellen in Struktur und Benennung zu finden, bevor gestaltet oder programmiert wird.
+:::
+
+Gemessen werden:
+
+- **Erfolgsquote:** Wie viele haben das Ziel gefunden?
+- **Direktheit:** Wie viele haben es ohne Umweg gefunden?
+- **Zeit:** Wie lange hat es gedauert?
+- **Pfade:** Wo haben sich Teilnehmende verirrt? Wo sind sie zuerst hingegangen?
+
+Beispielaufgaben für die Website einer Bibliothek:
+
+| Aufgabe | Erwarteter Pfad |
+| --- | --- |
+| Wo würdest du herausfinden, wie lange man DVDs behalten darf? | Services › Ausleihe & Rückgabe › Leihfristen |
+| Wo würdest du nachsehen, wann die Bibliothek am Samstag öffnet? | Über uns › Öffnungszeiten |
+| Wo würdest du neue Kinderbücher finden? | Bücher › Kinderbücher *oder* Bücher › Neueingänge |
+
+Die dritte Aufgabe zeigt: Manchmal gibt es zwei richtige Antworten, und das ist in Ordnung, solange beide Wege zum Ziel führen.
+
+## Am Bestellsystem: Struktur und Navigation {#sec-ia-demo}
+
+::: {.demo}
+**Von den Stories zur Sitemap.** Die User Stories aus Release 1 und 2 (siehe [Vom UX-Design zum Product Backlog](07-product-backlog.qmd)) bestimmen, welche Bildschirme es braucht. Gast und Küche bekommen getrennte Oberflächen auf getrennten Geräten, denn der Küchenbereich darf auf dem Gäste-Tablet gar nicht erreichbar sein:
+
+```{mermaid}
+%%| fig-cap: "Sitemap für Gast-Tablet und Küchenbildschirm"
+flowchart TD
+    G["Gast-Tablet<br/>(Tisch fest eingestellt)"] --> K["Speisekarte<br/>mit Kategorien"]
+    K --> W["Meine Bestellung<br/>(Warenkorb)"]
+    W --> BS["Bestätigung"]
+    BS --> ST["Bestellungen am Tisch<br/>Status live"]
+    ST --> K
+
+    KU["Küchenbildschirm"] --> KA["Küchenansicht<br/>Offen · In Zubereitung · Fertig"]
+    KU --> GV["Gerichte<br/>verfügbar / ausverkauft"]
+    KU --> AR["Archiv"]
+```
+
+**Navigationskonzept Gast:** Die Speisekarte ist die Startseite. Die globale Navigation besteht aus zwei Einträgen, *Speisekarte* und *Bestellungen am Tisch*; der Warenkorb ist als Leiste immer sichtbar, sobald etwas ausgewählt ist. Die Kategorien der Speisekarte sind die lokale Navigation. Eine Suche braucht es bei rund 30 Gerichten nicht.
+
+**Navigationskonzept Küche:** drei Bereiche als große Tabs; die Küchenansicht ist immer der Standard und kehrt nach einer Minute ohne Berührung automatisch zurück.
+:::
+
+::: {.demo}
+**Card Sorting: Braucht die Speisekarte Kategorien?** In der Story Map stehen Kategorien erst in Release 2; Release 1 sollte mit einer flachen Liste auskommen. Ob das reicht, war eine ungeprüfte Annahme. Ein offenes Card Sorting mit 32 Gerichten und 15 Gästen ergab [Beispiel]{.fiktiv}:
+
+- 14 von 15 Personen bildeten eine Gruppe für **Getränke**, 13 eine für **Desserts**.
+- Hauptspeisen wurden uneinheitlich gruppiert: nach Zutat (*Fleisch*, *Fisch*, *Vegetarisch*) oder nach Art (*Suppen*, *Hauptspeisen*, *Salate*).
+- Der Begriff „Beilagen“ war für jüngere Teilnehmende unklar; sie legten Pommes zu den Snacks.
+
+**Folgerung:** Die flache Liste ist für Gäste schwer zu überblicken. Im Backlog Refinement wandern die Kategorien deshalb von Release 2 in Release 1, und US-001 bekommt ein neues Akzeptanzkriterium: Gerichte bekommen eine Kategorie (*Vorspeisen & Suppen, Hauptspeisen, Beilagen & Snacks, Desserts, Getränke*), und vegetarische Gerichte bekommen eine Kennzeichnung statt einer eigenen Kategorie.
+:::
+
+::: {.demo}
+**Tree Test für das Gast-Tablet** [Beispiel]{.fiktiv}
+
+| Aufgabe | Erwarteter Pfad | Erfolg |
+| --- | --- | --- |
+| Bestell ein Cola nach. | Speisekarte › Getränke | 15 / 15 |
+| Finde heraus, ob deine Pizza schon im Ofen ist. | Bestellungen am Tisch | 11 / 15 |
+| Du hast aus Versehen zwei Suppen bestellt. Mach das rückgängig. | Bestellungen am Tisch › Bestellung › Stornieren | 7 / 15 |
+
+Die dritte Aufgabe fällt durch: Acht Personen suchten im Warenkorb (*Meine Bestellung*), der zu diesem Zeitpunkt schon leer war. Der Begriff *Meine Bestellung* für den Warenkorb führt in die Irre, sobald es abgeschickte Bestellungen gibt. Neuer Vorschlag: *Warenkorb* für noch nicht abgeschickte Gerichte, *Bestellungen am Tisch* für alles Abgeschickte.
+:::
+
+## Übung {.unnumbered}
+
+::: {.uebung}
+**Card Sorting mit Papierkarten**
+
+**Ziel:** Mit echten Nutzenden eine Struktur für die Speisekarte finden.
+
+**Ablauf (Gruppen zu dritt, eine Unterrichtseinheit):**
+
+1. Nehmt die Speisekarte eines echten Restaurants in eurer Nähe und schreibt 25 bis 30 Gerichte und Getränke auf einzelne Karten.
+2. Führt ein offenes Card Sorting mit mindestens fünf Personen aus anderen Gruppen durch, jede Person einzeln. Lasst sie laut denken und notiert ihre Gruppennamen.
+3. Fotografiert jedes Ergebnis.
+4. Wertet aus: Welche Gruppen kommen bei fast allen vor? Welche Karten wandern zwischen Gruppen? Welche Begriffe waren unklar?
+5. Zeichnet daraus eine Sitemap für das Gast-Tablet und schreibt drei Tree-Test-Aufgaben dazu.
+
+**Werkzeug:** Karteikarten oder Haftnotizen. Online-Alternativen: OptimalSort und Treejack (Optimal Workshop) oder UXtweak, jeweils mit eingeschränkter Gratisversion.
+
+**Ergebnis:** Fotos der Sortierungen, eine kurze Auswertung, eine Sitemap, drei Tree-Test-Aufgaben.
+:::
+
+## Selbstcheck {.unnumbered .selbstcheck}
+
+<details><summary>Was ist Informationsarchitektur, und welche vier Bereiche umfasst sie?</summary>
+
+Die Strukturierung, Benennung und Verknüpfung von Inhalten, damit Nutzende finden, was sie suchen. Bereiche: Organisation, Beschriftung, Navigation und Suche.
+
+</details>
+
+<details><summary>Nenne die fünf Arten von Navigation mit je einem Beispiel.</summary>
+
+Global (Top-Bar, Tab-Bar), lokal (Untermenü *Sneaker* unter *Schuhe*), kontextuell (Ähnliche Produkte), Breadcrumbs (Startseite › Shop › Schuhe), Suchnavigation (Suchfeld bei Amazon).
+
+</details>
+
+<details><summary>Was ist der Unterschied zwischen offenem und geschlossenem Card Sorting?</summary>
+
+Beim offenen Card Sorting bilden und benennen die Teilnehmenden ihre Gruppen selbst; es eignet sich, wenn noch keine Struktur existiert. Beim geschlossenen sind die Kategorien vorgegeben und es werden nur Karten zugeordnet, etwa um neue Inhalte in eine bestehende Struktur einzuordnen.
+
+</details>
+
+<details><summary>Was misst ein Tree Test, und warum ohne grafische Gestaltung?</summary>
+
+Erfolgsquote, Direktheit, Zeit und die gewählten Pfade. Ohne Gestaltung, damit nur Struktur und Benennung geprüft werden und nicht Farben, Bilder oder Layout das Ergebnis beeinflussen.
+
+</details>
+
+<details><summary>Warum bekommen Gast und Küche beim Bestellsystem getrennte Oberflächen statt einer gemeinsamen Navigation?</summary>
+
+Weil sie völlig verschiedene Aufgaben, Geräte und Nutzungskontexte haben: Der Gast bestellt am Tablet am Tisch, die Küche überwacht Bestellungen auf einem Wandbildschirm. Außerdem darf der Küchenbereich auf dem Gäste-Tablet nicht erreichbar sein.
+
+</details>

@@ -1,0 +1,192 @@
+# Glossar {#sec-glossar}
+
+Alle prüfungsrelevanten Begriffe des Buches in alphabetischer Reihenfolge. Der Verweis führt zum Kapitel, in dem der Begriff ausführlich erklärt wird.
+
+A/B-Test
+: Echte Nutzende sehen zufällig Variante A oder B; gemessen wird, welche besser abschneidet. Zeigt *welche*, nicht *warum*. → [Usability-Tests](13-usability-tests.qmd)
+
+Affinity Mapping
+: Auswertungsmethode: Einzelne Beobachtungen auf Haftnotizen werden ohne vorgegebene Kategorien nach Ähnlichkeit gruppiert; aus den Gruppen entstehen Insights. → [User Research](04-user-research.qmd)
+
+Akzeptanzkriterium
+: Bedingung, die festlegt, wann eine User Story erfüllt ist, oft im Format Given – When – Then; mit Oberfläche auch prüfbare UX-Kriterien. → [Vom UX-Design zum Product Backlog](07-product-backlog.qmd)
+
+Atomic Design
+: Modell von Brad Frost, das Oberflächen aus Atomen, Molekülen, Organismen, Templates und Pages aufbaut. → [Designsysteme](11-designsysteme.qmd)
+
+Backlog Refinement
+: Laufende Arbeit am Product Backlog: Stories werden genauer beschrieben, geschnitten, geschätzt und mit getesteten Entwürfen versehen. → [Vom UX-Design zum Product Backlog](07-product-backlog.qmd)
+
+Barrierefreiheit (Accessibility, a11y)
+: Ein Produkt ist für alle Menschen nutzbar, unabhängig von körperlichen oder kognitiven Fähigkeiten, ohne fremde Hilfe. → [Barrierefreiheit](12-barrierefreiheit.qmd)
+
+Breadcrumbs
+: Navigation, die den Pfad zur aktuellen Seite zeigt, z. B. Startseite › Shop › Schuhe. → [Informationsarchitektur](08-informationsarchitektur.qmd)
+
+Card Sorting
+: Nutzende sortieren Karten mit Inhaltsbegriffen in Gruppen und benennen sie; offen (eigene Gruppen), geschlossen (vorgegebene Gruppen) oder hybrid. → [Informationsarchitektur](08-informationsarchitektur.qmd)
+
+Definition of Done (DoD)
+: Vereinbarung im Scrum-Team, wann ein Inkrement fertig ist; UX-Ergänzung z. B. WCAG AA geprüft. → [UX im Scrum-Prozess](02-ux-scrum.qmd)
+
+Definition of Ready (DoR)
+: Teamvereinbarung (nicht im Scrum Guide), wann eine Story bereit für einen Sprint ist; UX-Ergänzung z. B. getesteter Wireframe. → [UX im Scrum-Prozess](02-ux-scrum.qmd)
+
+Design Tokens
+: Benannte Gestaltungsentscheidungen wie `color-action` oder `space-m`, die in Design und Code statt fester Werte verwendet werden. → [Designsysteme](11-designsysteme.qmd)
+
+Designsystem
+: Einheitliche Sammlung von Regeln, Tokens, Komponenten und Richtlinien für die Gestaltung eines Produkts. → [Designsysteme](11-designsysteme.qmd)
+
+Double Diamond
+: Prozessmodell des Design Council mit vier Phasen Discover, Define, Develop, Deliver; zwei Rauten, die jeweils öffnen und schließen. → [UX und UI](01-ux-ui.qmd)
+
+Dual-Track Agile
+: Die Arbeit eines Scrum-Teams läuft in zwei Spuren: Discovery (was bauen wir?) arbeitet etwa einen Sprint voraus, Delivery setzt in Sprints um. → [UX im Scrum-Prozess](02-ux-scrum.qmd)
+
+Empathy Map
+: Werkzeug, um die Perspektive einer Persona einzunehmen, mit den Feldern Sagt, Denkt, Tut, Fühlt (oft ergänzt um Sieht, Hört, Pains, Gains). → [Personas](05-personas.qmd)
+
+F-Muster
+: Blickverlauf auf textreichen Seiten (Nielsen): Überschrift, Anfang der ersten Absätze, dann der linke Rand. → [Visuelle Gestaltung](10-visuelle-gestaltung.qmd)
+
+Fidelity
+: Wiedergabetreue eines Entwurfs: Low-Fidelity (Scribble), Mid-Fidelity (Wireframe in Graustufen), High-Fidelity (sieht aus wie das fertige Produkt). → [Wireframes](09-wireframes-prototypen.qmd)
+
+Fittssches Gesetz
+: Die Zeit, ein Ziel zu treffen, hängt von seiner Größe und Entfernung ab; wichtige Ziele groß und nah. → [Visuelle Gestaltung](10-visuelle-gestaltung.qmd)
+
+Fokusgruppe
+: Moderierte Gruppendiskussion mit 5 bis 10 Teilnehmenden aus der Zielgruppe zu einem Thema. → [User Research](04-user-research.qmd)
+
+Gestaltgesetze
+: Regeln der Wahrnehmung, z. B. Nähe, Ähnlichkeit, Geschlossenheit, Figur und Grund, gemeinsame Region, Kontinuität. → [Visuelle Gestaltung](10-visuelle-gestaltung.qmd)
+
+Gutenberg-Diagramm, Z-Muster
+: Blickverlauf auf textarmen Seiten von oben links nach unten rechts. → [Visuelle Gestaltung](10-visuelle-gestaltung.qmd)
+
+Halluzination
+: Plausibel klingende, aber erfundene Aussage eines LLM, etwa ein Zitat, das in keinem Interview vorkam. → [UX-Arbeit mit KI-Werkzeugen](14-ki-werkzeuge.qmd)
+
+Heuristische Evaluation
+: Fachleute prüfen eine Oberfläche unabhängig voneinander anhand anerkannter Grundsätze, etwa der 10 Heuristiken von Nielsen. → [Usability-Tests](13-usability-tests.qmd)
+
+Hicksches Gesetz
+: Je mehr Wahlmöglichkeiten, desto länger dauert die Entscheidung. → [Visuelle Gestaltung](10-visuelle-gestaltung.qmd)
+
+Human in the Loop
+: Ein Mensch prüft und entscheidet an jeder wichtigen Stelle; die KI liefert Entwürfe und Vorschläge. → [UX-Arbeit mit KI-Werkzeugen](14-ki-werkzeuge.qmd)
+
+Informationsarchitektur (IA)
+: Strukturierung, Benennung und Verknüpfung von Inhalten; umfasst Organisation, Beschriftung, Navigation und Suche. → [Informationsarchitektur](08-informationsarchitektur.qmd)
+
+Insight
+: Deutung einer oder mehrerer Beobachtungen, die ein Bedürfnis oder Motiv erklärt. → [User Research](04-user-research.qmd)
+
+Interaktionsprinzipien (ISO 9241-110)
+: Aufgabenangemessenheit, Selbstbeschreibungsfähigkeit, Erwartungskonformität, Erlernbarkeit, Steuerbarkeit, Robustheit gegen Benutzungsfehler, Benutzerbindung. → [Usability-Tests](13-usability-tests.qmd)
+
+Interviewleitfaden
+: Vorbereitung eines halbstrukturierten Interviews mit Einstieg, Hauptteil (offene Fragen) und Abschluss. → [User Research](04-user-research.qmd)
+
+INVEST
+: Kriterien für gute User Stories: Independent, Negotiable, Valuable, Estimable, Small, Testable. → [Vom UX-Design zum Product Backlog](07-product-backlog.qmd)
+
+Jakobs Gesetz
+: Nutzende erwarten, dass eine Oberfläche so funktioniert wie die, die sie schon kennen. → [Visuelle Gestaltung](10-visuelle-gestaltung.qmd)
+
+Large Language Model (LLM)
+: KI-Modell, das aus großen Textmengen gelernt hat, wahrscheinliche Fortsetzungen von Text zu erzeugen; weiß über die eigenen Nutzenden nur, was man ihm gibt. → [UX-Arbeit mit KI-Werkzeugen](14-ki-werkzeuge.qmd)
+
+Lautes Denken (Thinking Aloud)
+: Teilnehmende eines Tests sprechen aus, was sie sehen, denken und vorhaben. → [Usability-Tests](13-usability-tests.qmd)
+
+Lean UX
+: Schlanker UX-Prozess für agile Teams mit dem Kreislauf Denken – Machen – Prüfen. → [UX und UI](01-ux-ui.qmd)
+
+Millersches Gesetz
+: Das Kurzzeitgedächtnis hält etwa 7 ± 2 Elemente (neuere Forschung: etwa 4). → [Visuelle Gestaltung](10-visuelle-gestaltung.qmd)
+
+Mockup
+: Statisches, gestaltetes Bild eines Bildschirms, wie er fertig aussehen soll. → [Wireframes](09-wireframes-prototypen.qmd)
+
+Nutzerzentriertes Design (UCD)
+: Gestaltung, die Nutzende, ihre Ziele und ihren Nutzungskontext in den Mittelpunkt stellt und sie während der Entwicklung einbezieht (ISO 9241-210). → [UX und UI](01-ux-ui.qmd)
+
+Nutzungskontext
+: Benutzer, Ziele und Aufgaben, Ausrüstung sowie physische und soziale Umgebung, in der ein Produkt genutzt wird (ISO 9241-11). → [User Research](04-user-research.qmd)
+
+Pain Point
+: Schwierigkeit, Frustration oder Hindernis im Ablauf einer Persona. → [User Journey](06-user-journey.qmd)
+
+Persona
+: Prototypisches Nutzerprofil auf Basis von Forschung, das Ziele, Eigenschaften, Verhalten und Motive einer Gruppe beschreibt; primär, sekundär, negativ oder Proto-Persona. → [Personas](05-personas.qmd)
+
+POUR
+: Die vier Prinzipien der WCAG: wahrnehmbar, bedienbar, verständlich, robust. → [Barrierefreiheit](12-barrierefreiheit.qmd)
+
+Product Backlog
+: Geordnete Liste von allem, was für das Produkt getan werden muss; enthält User Stories, Discovery-Einträge und UX-Schulden. Der Product Owner verantwortet Inhalt und Reihenfolge. → [Vom UX-Design zum Product Backlog](07-product-backlog.qmd)
+
+Product Goal
+: Langfristiges Ziel des Produkts in Scrum, nach der Forschung aus Sicht der Nutzenden formuliert. → [Vom UX-Design zum Product Backlog](07-product-backlog.qmd)
+
+Prototyp
+: Bedienbare Simulation eines Produkts, vom Papierprototyp bis zum klickbaren High-Fidelity-Prototyp. → [Wireframes](09-wireframes-prototypen.qmd)
+
+Service Blueprint
+: Erweitert die Journey um das, was hinter den Touchpoints passiert (Mitarbeitende, Systeme), getrennt durch die Sichtbarkeitslinie. → [User Journey](06-user-journey.qmd)
+
+Sitemap
+: Baumdiagramm der Seiten- oder Bildschirmstruktur. → [Informationsarchitektur](08-informationsarchitektur.qmd)
+
+Sprint 0
+: Kurze Startphase vor dem ersten Inkrement mit Produktziel, erster Forschung, Personas, Journey und Story Map. → [UX im Scrum-Prozess](02-ux-scrum.qmd)
+
+Story Map
+: Zweidimensionale Anordnung von User Stories: horizontal die Aktivitäten der Nutzenden (Rückgrat), vertikal die Stories nach Wichtigkeit; waagrechte Schnitte bilden Releases (Jeff Patton). → [Vom UX-Design zum Product Backlog](07-product-backlog.qmd)
+
+Synthetische Nutzende (Synthetic Users)
+: Von einer KI simulierte Personen; ihre Antworten sind Hypothesen, keine Forschungsergebnisse. → [UX-Arbeit mit KI-Werkzeugen](14-ki-werkzeuge.qmd)
+
+System Usability Scale (SUS)
+: Standardisierter Fragebogen mit zehn Aussagen; Ergebnis 0 bis 100, Durchschnitt etwa 68. → [Usability-Tests](13-usability-tests.qmd)
+
+Touchpoint
+: Jeder Kontakt zwischen Persona und Produkt oder Unternehmen. → [User Journey](06-user-journey.qmd)
+
+Tree Testing (Reverse Card Sorting)
+: Prüfung einer Navigationsstruktur als reiner Textbaum mit Aufgaben; gemessen werden Erfolg, Direktheit, Zeit und Pfade. → [Informationsarchitektur](08-informationsarchitektur.qmd)
+
+Usability (Gebrauchstauglichkeit)
+: Ausmaß, in dem ein Produkt durch bestimmte Benutzer in einem bestimmten Nutzungskontext genutzt werden kann, um bestimmte Ziele effektiv, effizient und zufriedenstellend zu erreichen (ISO 9241-11). → [UX und UI](01-ux-ui.qmd)
+
+Usability-Test
+: Personen aus der Zielgruppe lösen Aufgaben, während sie beobachtet werden. → [Usability-Tests](13-usability-tests.qmd)
+
+User Experience (UX)
+: Wahrnehmungen und Reaktionen einer Person, die aus der tatsächlichen oder erwarteten Benutzung eines Produkts resultieren (ISO 9241-210). → [UX und UI](01-ux-ui.qmd)
+
+User Flow
+: Flussdiagramm der Schritte durch die Oberfläche: Bildschirme, Aktionen, Entscheidungen. → [Wireframes](09-wireframes-prototypen.qmd)
+
+User Interface (UI)
+: Die sichtbare und bedienbare Oberfläche eines Produkts. → [UX und UI](01-ux-ui.qmd)
+
+User Journey Map
+: Visualisierung des Weges einer Persona zu einem Ziel mit Phasen, Handlungen, Gedanken, Emotionen, Pain Points und Chancen. → [User Journey](06-user-journey.qmd)
+
+User Research
+: Systematische Untersuchung der Nutzenden, ihrer Ziele, Bedürfnisse und ihres Nutzungskontexts. → [User Research](04-user-research.qmd)
+
+User Story
+: Anforderung aus Sicht der Nutzenden: Als [Rolle] möchte ich [Ziel], damit [Nutzen]; ergänzt durch Akzeptanzkriterien. → [Vom UX-Design zum Product Backlog](07-product-backlog.qmd)
+
+Visuelle Hierarchie
+: Anordnung und Gewichtung von Elementen, die die Reihenfolge der Wahrnehmung bestimmt. → [Visuelle Gestaltung](10-visuelle-gestaltung.qmd)
+
+WCAG
+: Web Content Accessibility Guidelines des W3C, aktuell 2.2; Stufen A, AA, AAA. → [Barrierefreiheit](12-barrierefreiheit.qmd)
+
+Wireframe
+: Reduzierte Layoutskizze, die Elemente, Anordnung und Ablauf zeigt, ohne Farben und Bilder. → [Wireframes](09-wireframes-prototypen.qmd)

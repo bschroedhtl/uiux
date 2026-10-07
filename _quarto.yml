@@ -9,7 +9,7 @@ lang: de
 
 book:
   title: "UI/UX Design"
-  subtitle: "Ein Workshop am Beispiel eines digitalen Restaurantbestellsystems · SYP, 3. Jahrgang, HTL Leonding"
+  subtitle: "Ein Workshop am Beispiel eines digitalen Restaurantbestellsystems · SYP/ITP, HTL Leonding"
   date: last-modified
   date-format: "MMMM YYYY"
   search: true
